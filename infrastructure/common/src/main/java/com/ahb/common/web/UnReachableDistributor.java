@@ -3,9 +3,9 @@ package com.ahb.common.web;
 /**
  * Created by aheroboy on 16/3/2018.
  */
-public class UnReachableDistributor implements RequestDistributor {
+public class UnReachableDistributor extends AbstractDistributor {
     @Override
-    public InternalResp distribute(InternalReq req) {
-        return null;
+    public void distribute(InternalReq req,InternalResp resp) {
+        super.distribute(req,resp);
     }
 }

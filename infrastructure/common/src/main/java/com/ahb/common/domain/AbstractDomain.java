@@ -2,6 +2,7 @@ package com.ahb.common.domain;
 
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
+import com.ahb.common.web.ViewPayload;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +19,15 @@ public class AbstractDomain implements Domain {
     static {
         handlers.put(HandlerType.LOING, new Handler() {
             @Override
-            public void handle(Domain domain, InternalReq req) {
+            public ViewPayload handle(Domain domain, InternalReq req) {
                 LOGGER.info("handle request:" + req);
+                ViewPayload payload = domain.toView();
+                return payload;
+            }
+
+            @Override
+            public HandlerType getType() {
+                return HandlerType.LOING;
             }
         });
     }
@@ -32,15 +40,22 @@ public class AbstractDomain implements Domain {
         this.domainName = name;
     }
 
+    //TODO: handle output.
     @Override
     public void handle(InternalReq req, InternalResp resp) {
         Handler handler = handlers.get(req.getType());
-        handler.handle(this, req);
+        resp.setPayload(handler.handle(this, req));
     }
 
     @Override
-    public void install(Handler installable) {
+    public void install(Handler handler) {
+        handlers.put(handler.getType(), handler);
+    }
 
+    @Override
+    public ViewPayload toView() {
+        ViewPayload payload = new ViewPayload();
+        return payload;
     }
 
     public static Map<HandlerType, Handler> getHandlers() {

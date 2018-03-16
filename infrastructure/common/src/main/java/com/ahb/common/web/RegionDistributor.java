@@ -7,7 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * Created by aheroboy on 16/3/2018.
  */
-public class RegionDistributor implements RequestDistributor {
+public class RegionDistributor extends AbstractDistributor {
     private Region region;
 
     public RegionDistributor(Region region) {
@@ -15,8 +15,7 @@ public class RegionDistributor implements RequestDistributor {
     }
 
     @Override
-    public InternalResp distribute(InternalReq req) {
-        InternalResp resp = new InternalResp();
+    public void distribute(InternalReq req, InternalResp resp) {
         String domainId = req.getDomainId();
         if (StringUtils.isNotBlank(domainId)) {
             Domain domain = region.getDomain(domainId);
@@ -24,6 +23,6 @@ public class RegionDistributor implements RequestDistributor {
                 domain.handle(req, resp);
             }
         }
-        return resp;
+        super.distribute(req, resp);
     }
 }

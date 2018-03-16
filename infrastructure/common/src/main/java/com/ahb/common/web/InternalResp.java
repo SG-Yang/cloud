@@ -1,16 +1,34 @@
 package com.ahb.common.web;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * Created by aheroboy on 16/3/2018.
  */
 public class InternalResp {
-    private String payload;
+    private HttpServletResponse resp;
+    private ViewPayload payload;
 
-    public String getPayload() {
+    public InternalResp(HttpServletResponse resp) {
+        this.resp = resp;
+    }
+
+    public void output(){
+    }
+
+    public HttpServletResponse getResp() {
+        return resp;
+    }
+
+    public void setResp(HttpServletResponse resp) {
+        this.resp = resp;
+    }
+
+    public ViewPayload getPayload() {
         return payload;
     }
 
-    public void setPayload(String payload) {
+    public void setPayload(ViewPayload payload) {
         this.payload = payload;
     }
 }

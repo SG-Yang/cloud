@@ -6,14 +6,14 @@ import com.ahb.common.domain.HandlerType;
  * Created by aheroboy on 16/3/2018.
  */
 public class InternalReq {
-    private PayloadObj payload;
+    private OperatePayload payload;
     private String targetUrl;
     private String regionUrl;
     private String domainId;
     private CloudSession session;
     private HandlerType type;
 
-    public InternalReq(PayloadObj payload) {
+    public InternalReq(OperatePayload payload) {
         this.payload = payload;
         this.type = payload.getOp();
     }

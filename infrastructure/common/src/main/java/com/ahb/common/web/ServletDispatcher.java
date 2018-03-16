@@ -16,7 +16,8 @@ public class ServletDispatcher extends HttpServlet {
 
     private PathResolver resolver;
     private Node node;
-    public ServletDispatcher(String name,Node node) {
+
+    public ServletDispatcher(String name, Node node) {
         this.name = name;
         this.node = node;
     }
@@ -47,12 +48,9 @@ public class ServletDispatcher extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         InternalReq internalReq = InternalReqBuilder.newInstance()
                 .ofServletRequest(req).build();
+        InternalResp internalResp = new InternalResp(resp);
         RequestDistributor distributor = resolver.resolve(internalReq);
-        response(distributor.distribute(internalReq), resp);
-    }
-
-    private void response(InternalResp internalResp, HttpServletResponse response) {
-
+        distributor.distribute(internalReq, internalResp);
     }
 
     @Override

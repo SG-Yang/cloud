@@ -24,7 +24,7 @@ public class InternalReqBuilder {
     public InternalReq build() {
         try {
             Gson gson = new Gson();
-            PayloadObj payload = gson.fromJson(request.getReader(), PayloadObj.class);
+            OperatePayload payload = gson.fromJson(request.getReader(), OperatePayload.class);
             InternalReq req = new InternalReq(payload);
             String contextPath = request.getPathInfo();
             if (StringUtils.startsWith(contextPath, PREFIX)) {
