@@ -1,0 +1,20 @@
+<form class="w3-container" #permissionForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="w3-card">
+    <div class="w3-container w3-grey" style="margin-top: -10px;">
+      <h2>Add Permission Group Form</h2>
+    </div>
+    <p>
+      <label>Code:</label>
+      <input class="w3-input" id="name" name="code" op="text" [(ngModel)]="permissionGroup.code">
+    </p>
+    <p>
+      <label>Description:</label>
+      <input class="w3-input form-control" id="desc" name="desc" op="text" [(ngModel)]="permissionGroup.desc">
+    </p>
+    <p>
+      <button class="w3-btn w3-padding w3-teal" op="submit">Save</button>
+    </p>
+  </div>
+</form>
+
+

@@ -1,0 +1,29 @@
+<form *ngIf="isLoaded" class="w3-container" #permissionForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="w3-card">
+    <div class="w3-container w3-grey" style="margin-top: -10px;">
+      <h2>Add Permission Group Form</h2>
+    </div>
+    <div *ngFor="let searchField of searchDomain.searchFieldDefs" class="w3-container">
+      <label class="w3-card">{{searchField.fieldName}}</label>
+      <select name="{{searchField.fieldName}}" [(ngModel)] = "searchField.selectedOpType">
+        <option *ngFor="let op of searchField.supportedOperationTypes" [ngValue]="op">{{op.description}}
+        </option>
+      </select>
+      <!--<div *ngIf="searchField.fieldType=='Date'">-->
+        <!--<mat-form-field>-->
+            <!--<input matInput [matDatepicker]="picker" placeholder="pick a time">-->
+          <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+          <!--<mat-datepicker #picker></mat-datepicker>-->
+        <!--</mat-form-field>-->
+      <!--</div>-->
+      <!--<div *ngIf="searchField.fieldType!='Date'">-->
+        <input name="{{searchField.fieldName}}" [(ngModel)]= searchField.fieldValue op="text">
+      <!--</div>-->
+    </div>
+    <div>
+      <input op="submit" value="Search">
+    </div>
+  </div>
+</form>
+<app-view-permission [permissions]="permissionGroup.permissions"></app-view-permission>
+

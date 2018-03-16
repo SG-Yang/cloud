@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/api/api.iml" filepath="$PROJECT_DIR$/infrastructure/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/business-ai/business-ai.iml" filepath="$PROJECT_DIR$/infrastructure/business-ai/business-ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/business-holder/business-holder.iml" filepath="$PROJECT_DIR$/infrastructure/business-holder/business-holder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud.iml" filepath="$PROJECT_DIR$/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/common/common.iml" filepath="$PROJECT_DIR$/infrastructure/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/console/console.iml" filepath="$PROJECT_DIR$/console/console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/event-pool/event-pool.iml" filepath="$PROJECT_DIR$/infrastructure/event-pool/event-pool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/infrastructure.iml" filepath="$PROJECT_DIR$/infrastructure/infrastructure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/market/market.iml" filepath="$PROJECT_DIR$/market/market.iml" />
+    </modules>
+  </component>
+</project>

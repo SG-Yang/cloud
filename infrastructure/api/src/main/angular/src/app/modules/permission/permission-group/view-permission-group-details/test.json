@@ -1,0 +1,141 @@
+{
+  "success": false,
+  "message": null,
+  "voBody": {
+    "searchName": "SECURITY_PEMISSION",
+    "searchFieldDefs": [
+      {
+        "fieldName": "securityGroups",
+        "fieldType": "Set",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "IN",
+            "description": "in"
+          }
+        ]
+      },
+      {
+        "fieldName": "updatedDate",
+        "fieldType": "Date",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "GT",
+            "description": "great than"
+          },
+          {
+            "operationType": "GET",
+            "description": "great equal than"
+          },
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          },
+          {
+            "operationType": "LET",
+            "description": "less equal than"
+          },
+          {
+            "operationType": "LT",
+            "description": "less then"
+          }
+        ]
+      },
+      {
+        "fieldName": "description",
+        "fieldType": "String",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          },
+          {
+            "operationType": "LIKE",
+            "description": "likes"
+          }
+        ]
+      },
+      {
+        "fieldName": "code",
+        "fieldType": "String",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          }
+        ]
+      },
+      {
+        "fieldName": "updatedBy",
+        "fieldType": "Long",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          }
+        ]
+      },
+      {
+        "fieldName": "createdDate",
+        "fieldType": "Date",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "GT",
+            "description": "great than"
+          },
+          {
+            "operationType": "GET",
+            "description": "great equal than"
+          },
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          },
+          {
+            "operationType": "LET",
+            "description": "less equal than"
+          },
+          {
+            "operationType": "LT",
+            "description": "less then"
+          }
+        ]
+      },
+      {
+        "fieldName": "id",
+        "fieldType": "Long",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          }
+        ]
+      },
+      {
+        "fieldName": "createdBy",
+        "fieldType": "Long",
+        "fieldValue": null,
+        "selectedOpType": null,
+        "supportedOperationTypes": [
+          {
+            "operationType": "EQ",
+            "description": "equals"
+          }
+        ]
+      }
+    ]
+  }
+}

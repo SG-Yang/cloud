@@ -1,0 +1,21 @@
+<form class="w3-container" #permissionForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="w3-card">
+    <div class="w3-container w3-grey" style="margin-top: -10px;">
+      <h2>Find Permission Group Form</h2>
+    </div>
+    <p>
+      <label>Code:</label>
+      <input class="w3-input" id="name" name="code" op="text" [(ngModel)]="permissionGroup.code">
+    </p>
+    <p>
+      <button class="w3-btn w3-padding w3-teal" op="submit">Find</button>
+    </p>
+  </div>
+</form>
+
+<div class="w3-container">
+  <div class="w3-container w3-grey">
+    <h2>Permission Group List</h2>
+  </div>
+  <app-permission-group-linkage [groups]=permissionGroups></app-permission-group-linkage>
+</div>

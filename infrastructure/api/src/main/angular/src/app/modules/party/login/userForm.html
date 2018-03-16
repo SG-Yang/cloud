@@ -1,0 +1,16 @@
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" method="post" class="basic-form">
+    <table class="basic-table">
+        <tr>
+            <td>username:</td>
+            <td><input [(ngModel)]="model.username" name="username" op="text"/></td>
+        </tr>
+        <tr>
+            <td>password</td>
+            <td><input [(ngModel)]="model.password" typeof="password" name="password"></td>
+        </tr>
+        <tr>
+            <td><button op="submit" class="btn btn-success">Submit</button></td>
+        </tr>
+    </table>
+</form>
+{{diagnostic}}

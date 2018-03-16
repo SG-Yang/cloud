@@ -1,0 +1,22 @@
+<form class="w3-form w3-container" #permissionFindForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="w3-card">
+    <div class="w3-container w3-grey">
+      <span class="w3-xlarge" style="float: left;">--</span><h2>Permission form</h2>
+    </div>
+    <div *ngFor="let critera of criteras" class="w3-container w3-input-group w3-border-blue-grey">
+      <label class="w3-label">{{critera.fieldName}}:</label>
+      <input class="w3-input" name="{{critera.fieldName}}" op="text" [(ngModel)]="critera.fieldValue">
+    </div>
+    <p>
+      <button op="submit" class="w3-btn w3-padding w3-teal">Search</button>
+    </p>
+  </div>
+
+</form>
+<div class="w3-container">
+  <div class="w3-container w3-grey">
+    <h2>Permission List</h2>
+  </div>
+  <app-view-permission [permissions]=permissions></app-view-permission>
+</div>

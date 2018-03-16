@@ -1,0 +1,20 @@
+<table class="w3-table-all w3-hover-amber">
+  <tr>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Id</th>
+    <th>Created By</th>
+    <th>Updated By</th>
+    <th>Created On</th>
+    <th>Updated On</th>
+  </tr>
+  <tr *ngFor="let p of permissions" >
+    <td>{{p.code}}</td>
+    <td>{{p.desc}}</td>
+    <td>{{p.id}}</td>
+    <td>{{p.createdBy}}</td>
+    <td>{{p.createdDate}}</td>
+    <td>{{p.updatedBy}}</td>
+    <td>{{p.updatedDate}}</td>
+  </tr>
+</table>

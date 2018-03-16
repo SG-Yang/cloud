@@ -1,0 +1,20 @@
+<table class="w3-table-all w3-hover-amber" style="margin-bottom:10px;overflow:scroll;">
+  <tr>
+    <th>Id</th>
+    <th>Code</th>
+    <th>Description</th>
+    <th>Created By</th>
+    <th>Updated By</th>
+    <th>Created On</th>
+    <th>Updated On</th>
+  </tr>
+  <tr *ngFor="let group of groups" >
+    <td><a href="javascript:void(0)" (click)="openPermissionGroup(group.id)">{{group.id}}</a></td>
+    <td>{{group.code}}</td>
+    <td>{{group.desc}}</td>
+    <td>{{group.createdBy}}</td>
+    <td>{{group.createdDate}}</td>
+    <td>{{group.updatedBy}}</td>
+    <td>{{group.updatedDate}}</td>
+  </tr>
+</table>
