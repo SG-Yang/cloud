@@ -37,7 +37,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
-            template: "\n    <div style=\"width: 99%;height: 90%;margin-right: -1%;\">\n      <router-outlet name=\"rootOutlet\"></router-outlet>\n      <app-header></app-header>\n      <div style=\"margin-top:4%\">\n        <!--<app-nav></app-nav>-->\n        <div id=\"main\">\n        </div>\n        \n      </div>\n      <app-footer></app-footer>\n    </div>",
+            template: "\n    <div style=\"width: 99%;height: 90%;margin-right: -1%;\">\n      <app-header></app-header>\n      <div style=\"margin-top:10%\">\n        <!--<app-nav></app-nav>-->\n        <div id=\"main\">\n          <router-outlet name=\"rootOutlet\"></router-outlet>\n        </div>\n\n      </div>\n      <app-footer></app-footer>\n    </div>",
         })
     ], AppComponent);
     return AppComponent;
@@ -992,7 +992,7 @@ var UserLoginService = (function (_super) {
 /***/ "../../../../../src/app/modules/party/login/userForm.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form #userForm=\"ngForm\" (ngSubmit)=\"onSubmit()\" method=\"post\" class=\"basic-form\">\n    <table class=\"basic-table\">\n        <tr>\n            <td>username:</td>\n            <td><input [(ngModel)]=\"model.username\" name=\"username\" op=\"text\"/></td>\n        </tr>\n        <tr>\n            <td>password</td>\n            <td><input [(ngModel)]=\"model.password\" typeof=\"password\" name=\"password\"></td>\n        </tr>\n        <tr>\n            <td><button op=\"submit\" class=\"btn btn-success\">Submit</button></td>\n        </tr>\n    </table>\n</form>\n{{diagnostic}}\n"
+module.exports = "<div class=\"w3-container\">\n  <div id=\"id001\">\n    <div class=\"w3-modal-content w3-card-4 w3-animate-zoom\" style=\"max-width:600px\">\n      <div class=\"w3-center\"><br>\n        <span onclick=\"document.getElementById('id01').style.display='none'\"\n              class=\"w3-button w3-xlarge w3-hover-red w3-display-topright\" title=\"Close Modal\"></span>\n        <img src=\"../../../../assets/loginicon.png\" alt=\"Avatar\" style=\"width:20%\" class=\"w3-circle w3-margin-top\">\n      </div>\n      <form class=\"w3-container\" action=\"/action_page.php\">\n        <div class=\"w3-section\">\n          <label><b>Username</b></label>\n          <input class=\"w3-input w3-border w3-margin-bottom\" type=\"text\" placeholder=\"Enter Username\" name=\"username\"\n                 required>\n          <label><b>Password</b></label>\n          <input class=\"w3-input w3-border\" type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required>\n          <button class=\"w3-button w3-blue-grey\" type=\"button\">Login</button>\n          <button onclick=\"document.getElementById('id01').style.display='none'\" type=\"button\"\n                  class=\"w3-button w3-blue-grey\">\n            Reset\n          </button>\n        </div>\n      </form>\n      <div class=\"w3-container w3-border-top w3-padding-16 w3-light-grey\">\n        <span class=\"w3-right w3-padding w3-hide-small\">Forgot <a href=\"#\">password?</a></span>\n      </div>\n    </div>\n  </div>\n</div>\n<!--\n-->\n"
 
 /***/ }),
 

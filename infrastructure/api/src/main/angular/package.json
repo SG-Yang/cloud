@@ -14,7 +14,6 @@
   },
   "private": true,
   "styles": [
-    "src/styles.css",
     "src/w3.css",
     "src/app.css"
   ],
