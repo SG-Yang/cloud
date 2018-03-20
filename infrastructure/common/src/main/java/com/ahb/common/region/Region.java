@@ -9,4 +9,5 @@ import com.ahb.common.domain.Domain;
 public interface Region<T> extends HotInstallable<T> {
     String getPath();
     Domain getDomain(String domainId);
+
 }

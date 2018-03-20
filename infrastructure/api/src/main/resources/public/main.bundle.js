@@ -92,7 +92,7 @@ var AppModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__angular_http__["d" /* JsonpModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* ReactiveFormsModule */],
                 __WEBPACK_IMPORTED_MODULE_5__modules_core_core_module__["a" /* CoreModule */],
-                __WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* RouterModule */].forRoot(routes),
+                __WEBPACK_IMPORTED_MODULE_6__angular_router__["b" /* RouterModule */].forRoot(routes, { enableTracing: true }),
             ],
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_4__app_component__["a" /* AppComponent */]
@@ -101,6 +101,26 @@ var AppModule = (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/Req.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Req; });
+/**
+ * Created by aheroboy on 19/3/2018.
+ */
+var Req = (function () {
+    function Req(op, c) {
+        this.op = op;
+        this.c = c;
+    }
+    return Req;
 }());
 
 
@@ -375,8 +395,8 @@ var HttpService = (function () {
     };
     HttpService.prototype.extractData = function (res) {
         var body = res.json();
-        console.log("response is:" + res.json());
-        return body.voBody || {};
+        console.log("response is:" + body);
+        return body || {};
     };
     HttpService.prototype.handleError = function (error) {
         var errMsg;
@@ -807,7 +827,7 @@ var CoreModule = (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
                 __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_router__["a" /* RouterModule */],
+                __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* RouterModule */],
                 __WEBPACK_IMPORTED_MODULE_10__angular_forms__["b" /* FormsModule */],
                 __WEBPACK_IMPORTED_MODULE_10__angular_forms__["c" /* ReactiveFormsModule */]
             ],
@@ -859,6 +879,8 @@ var CoreModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__core_common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__UserLoginService__ = __webpack_require__("../../../../../src/app/modules/party/login/UserLoginService.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Req__ = __webpack_require__("../../../../../src/app/modules/Req.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /**
  * Created by aheroboy on 4/11/2017.
  */
@@ -876,28 +898,38 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
 var LoginComponent = (function () {
-    function LoginComponent(userService) {
+    function LoginComponent(userService, route) {
         this.userService = userService;
+        this.route = route;
         this.name = "LoginComponent";
-        this.model = new __WEBPACK_IMPORTED_MODULE_1__User__["a" /* User */](0, 'sg', 'yang');
+        this.loginUser = new __WEBPACK_IMPORTED_MODULE_1__User__["a" /* User */](0, 'ysg', 'heping');
         this.submitted = false;
     }
-    LoginComponent.prototype.onSubmit = function () {
+    LoginComponent.prototype.doLogin = function () {
         var _this = this;
         this.submitted = true;
         var headers = new __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Headers */]({
-            'Authorization': 'Basic' + btoa(this.model.username + ':' + this.model.password),
+            'Authorization': 'Basic' + btoa(this.loginUser.username + ':' + this.loginUser.password),
             'X-Requested-With': 'XMLHttpRequest',
             'Content-Type': 'application/json'
         });
-        this.userService.login(this.model, new __WEBPACK_IMPORTED_MODULE_4__angular_http__["e" /* RequestOptions */]({ headers: headers })).subscribe(function (outUser) {
-            _this.model = outUser;
+        this.userService.login(new __WEBPACK_IMPORTED_MODULE_5__Req__["a" /* Req */]("LOGIN", this.loginUser), new __WEBPACK_IMPORTED_MODULE_4__angular_http__["e" /* RequestOptions */]({ headers: headers })).subscribe(function (outUser) {
+            var res = outUser;
+            if (res && res.status) {
+                console.error("invalid login...");
+                _this.route.navigateByUrl('/(rootOutlet:Dashboard)');
+            }
+            else {
+                console.info("Login success!!!");
+            }
         });
     };
     Object.defineProperty(LoginComponent.prototype, "diagnostic", {
         get: function () {
-            return JSON.stringify(this.model);
+            return JSON.stringify(this.loginUser);
         },
         enumerable: true,
         configurable: true
@@ -908,7 +940,7 @@ var LoginComponent = (function () {
             template: __webpack_require__("../../../../../src/app/modules/party/login/userForm.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_2__core_common_HttpService__["a" /* HttpService */], __WEBPACK_IMPORTED_MODULE_3__UserLoginService__["a" /* UserLoginService */]]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__UserLoginService__["a" /* UserLoginService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__UserLoginService__["a" /* UserLoginService */], __WEBPACK_IMPORTED_MODULE_6__angular_router__["a" /* Router */]])
     ], LoginComponent);
     return LoginComponent;
 }());
@@ -975,7 +1007,7 @@ var UserLoginService = (function (_super) {
     __extends(UserLoginService, _super);
     function UserLoginService(http) {
         var _this = _super.call(this, http) || this;
-        _this.setComponent("ahb/pub/login");
+        _this.setComponent("ahb/pub/user");
         return _this;
     }
     UserLoginService = __decorate([
@@ -992,7 +1024,7 @@ var UserLoginService = (function (_super) {
 /***/ "../../../../../src/app/modules/party/login/userForm.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"w3-container\">\n  <div id=\"id001\">\n    <div class=\"w3-modal-content w3-card-4 w3-animate-zoom\" style=\"max-width:600px\">\n      <div class=\"w3-center\"><br>\n        <span onclick=\"document.getElementById('id01').style.display='none'\"\n              class=\"w3-button w3-xlarge w3-hover-red w3-display-topright\" title=\"Close Modal\"></span>\n        <img src=\"../../../../assets/loginicon.png\" alt=\"Avatar\" style=\"width:20%\" class=\"w3-circle w3-margin-top\">\n      </div>\n      <form class=\"w3-container\" action=\"/action_page.php\">\n        <div class=\"w3-section\">\n          <label><b>Username</b></label>\n          <input class=\"w3-input w3-border w3-margin-bottom\" type=\"text\" placeholder=\"Enter Username\" name=\"username\"\n                 required>\n          <label><b>Password</b></label>\n          <input class=\"w3-input w3-border\" type=\"password\" placeholder=\"Enter Password\" name=\"psw\" required>\n          <button class=\"w3-button w3-blue-grey\" type=\"button\">Login</button>\n          <button onclick=\"document.getElementById('id01').style.display='none'\" type=\"button\"\n                  class=\"w3-button w3-blue-grey\">\n            Reset\n          </button>\n        </div>\n      </form>\n      <div class=\"w3-container w3-border-top w3-padding-16 w3-light-grey\">\n        <span class=\"w3-right w3-padding w3-hide-small\">Forgot <a href=\"#\">password?</a></span>\n      </div>\n    </div>\n  </div>\n</div>\n<!--\n-->\n"
+module.exports = "<base href=\"../\">\n<div class=\"w3-container\">\n  <div id=\"id001\">\n    <div class=\"w3-modal-content w3-card-4 w3-animate-zoom\" style=\"max-width:600px\">\n      <div class=\"w3-center\"><br>\n        <span onclick=\"document.getElementById('id01').style.display='none'\"\n              class=\"w3-button w3-xlarge w3-hover-red w3-display-topright\" title=\"Close Modal\"></span>\n        <img src=\"../../../../assets/loginicon.png\" alt=\"Avatar\" style=\"width:20%\" class=\"w3-circle w3-margin-top\">\n      </div>\n\n      <form class=\"w3-container\" (ngSubmit)=\"doLogin()\" action=\"/action_page.php\">\n        <div class=\"w3-section\">\n          <label><b>Username</b></label>\n          <input class=\"w3-input w3-border w3-margin-bottom\" type=\"text\" name=\"username\"\n                 [(ngModel)]=\"loginUser.username\"\n                 required>\n          <label><b>Password</b></label>\n          <input class=\"w3-input w3-border\" type=\"password\" [(ngModel)]=\"loginUser.password\" name=\"password\" required>\n          <button class=\"w3-button w3-blue-grey\" op=\"submit\">Login</button>\n          <button onclick=\"document.getElementById('id01').style.display='none'\" type=\"button\"\n                  class=\"w3-button w3-blue-grey\">\n            Reset\n          </button>\n        </div>\n      </form>\n      <div class=\"w3-container w3-border-top w3-padding-16 w3-light-grey\">\n        <span class=\"w3-right w3-padding w3-hide-small\">Forgot <a href=\"#\">password?</a></span>\n      </div>\n    </div>\n  </div>\n</div>\n{{diagnostic}}\n<!--\n-->\n"
 
 /***/ }),
 

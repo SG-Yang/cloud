@@ -41,7 +41,7 @@ public class ServletHandlerBuilder {
     public ServletContextHandler build() {
         ServletContextHandler handler = new ServletContextHandler();
         handler.setContextPath(contextPath);
-        handler.addServlet(new ServletHolder(new ServletDispatcher(servletName, node)), servletMappingUrl);
+        handler.addServlet(new ServletHolder(new DispatchServlet(servletName, node)), servletMappingUrl);
         return handler;
     }
 }

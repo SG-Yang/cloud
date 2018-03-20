@@ -15,6 +15,6 @@ public class AdminRegion extends AbstractRegion{
 
     @Override
     public Domain getDomain(String domainId) {
-        return null;
+        return super.getDomain(domainId);
     }
 }

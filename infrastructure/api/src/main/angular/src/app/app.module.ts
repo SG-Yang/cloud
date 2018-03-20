@@ -23,7 +23,7 @@ const routes: Routes = [
     JsonpModule,
     ReactiveFormsModule,
     CoreModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{ enableTracing: true }),
   ],
   declarations: [
     AppComponent

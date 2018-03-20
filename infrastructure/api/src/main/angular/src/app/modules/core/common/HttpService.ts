@@ -56,8 +56,8 @@ export class HttpService<Q, T> {
 
   extractData(res: Response) {
     let body = res.json();
-    console.log("response is:" + res.json());
-    return body.voBody || {};
+    console.log("response is:" + body);
+    return body || {};
   }
 
   handleError(error: Response | any) {

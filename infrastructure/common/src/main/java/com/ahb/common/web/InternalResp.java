@@ -1,5 +1,7 @@
 package com.ahb.common.web;
 
+import com.google.gson.Gson;
+
 import javax.servlet.http.HttpServletResponse;
 
 /**
@@ -13,7 +15,14 @@ public class InternalResp {
         this.resp = resp;
     }
 
-    public void output(){
+    public void output() {
+        try {
+            resp.getWriter().print(new Gson().toJson(payload));
+            resp.flushBuffer();
+        } catch (Exception e) {
+            e.printStackTrace();
+            //TODO:
+        }
     }
 
     public HttpServletResponse getResp() {

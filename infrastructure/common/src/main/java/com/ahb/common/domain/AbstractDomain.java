@@ -1,9 +1,8 @@
 package com.ahb.common.domain;
 
-import com.ahb.common.web.InternalReq;
-import com.ahb.common.web.InternalResp;
-import com.ahb.common.web.ViewPayload;
+import com.ahb.common.web.*;
 import com.google.common.collect.Maps;
+import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,27 +16,30 @@ public class AbstractDomain implements Domain {
     protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractDomain.class);
 
     static {
-        handlers.put(HandlerType.LOING, new Handler() {
+        handlers.put(HandlerType.LOGIN, new Handler() {
             @Override
             public ViewPayload handle(Domain domain, InternalReq req) {
                 LOGGER.info("handle request:" + req);
                 ViewPayload payload = domain.toView();
+                payload.setStatus(Boolean.TRUE);
                 return payload;
             }
 
             @Override
             public HandlerType getType() {
-                return HandlerType.LOING;
+                return HandlerType.LOGIN;
             }
         });
     }
 
     private String domainName;
     private String domainId;
+    private View view;
 
     public AbstractDomain(String name, String id) {
         this.domainId = id;
         this.domainName = name;
+        this.view = new ViewImpl();
     }
 
     //TODO: handle output.
@@ -54,8 +56,23 @@ public class AbstractDomain implements Domain {
 
     @Override
     public ViewPayload toView() {
-        ViewPayload payload = new ViewPayload();
+        JsonObject data = new JsonObject();
+        data.addProperty("simple", "Simple1");
+        data.addProperty("simple", "Simple1");
+        data.addProperty("simple", "Simple1");
+        JsonObject viewObj = view.toViewObj();
+        ViewPayload payload = new ViewPayload(viewObj, data);
         return payload;
+    }
+
+    @Override
+    public String getBusinessId() {
+        return null;
+    }
+
+    @Override
+    public int getLocateVersion() {
+        return 0;
     }
 
     public static Map<HandlerType, Handler> getHandlers() {
