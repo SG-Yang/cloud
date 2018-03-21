@@ -35,6 +35,7 @@ public class AbstractDomain implements Domain {
     private String domainName;
     private String domainId;
     private View view;
+    private DomainDesc domainDesc;
 
     public AbstractDomain(String name, String id) {
         this.domainId = id;
@@ -94,5 +95,21 @@ public class AbstractDomain implements Domain {
 
     public void setDomainId(String domainId) {
         this.domainId = domainId;
+    }
+
+    public View getView() {
+        return view;
+    }
+
+    public void setView(View view) {
+        this.view = view;
+    }
+
+    public DomainDesc getDomainDesc() {
+        return domainDesc;
+    }
+
+    public void setDomainDesc(DomainDesc domainDesc) {
+        this.domainDesc = domainDesc;
     }
 }

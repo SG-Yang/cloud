@@ -1,6 +1,8 @@
 package com.ahb.common.web;
 
 import com.ahb.common.node.Node;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +14,7 @@ import java.io.IOException;
  * Created by aheroboy on 15/3/2018.
  */
 public class DispatchServlet extends HttpServlet {
+    protected static final Logger LOGGER = LoggerFactory.getLogger(DispatchServlet.class);
     private String name;
     private Node node;
 
@@ -42,6 +45,7 @@ public class DispatchServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        LOGGER.info("Receiving request:" + req.getRequestURL());
         InternalReq internalReq = InternalReqBuilder.newInstance()
                 .ofServletRequest(req).build();
         node.distribute(internalReq, new InternalResp(resp));

@@ -16,4 +16,6 @@ public interface Node extends LifeCycle, Distributor {
     NodeInfo getNodeInfo();
 
     void setNodeInfo(NodeInfo nodeInfo);
+
+    void injectResource(CloudManager cloudManager);
 }

@@ -11,6 +11,8 @@ import {MenuService} from "./common/MenuService";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import {BrowserModule} from "@angular/platform-browser";
+import {DashboardComponent} from "../party/dashboard/dashboard.component";
+import {HttpService} from "./common/HttpService";
 
 
 @NgModule({
@@ -27,19 +29,13 @@ import {BrowserModule} from "@angular/platform-browser";
     LoginComponent,
     HeaderComponent,
     FooterComponent,
-    NavBarComponent
+    NavBarComponent,
+    DashboardComponent
   ],
   providers: [
-    MenuService,
-    PermissionHttpService,
-    SourceComponent,
-    MainComponent,
-    PageNotFoundComponent,
-    LoginComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavBarComponent
+    HttpService
   ],
+
   exports: [
     SourceComponent,
     MainComponent,
@@ -49,6 +45,7 @@ import {BrowserModule} from "@angular/platform-browser";
     FooterComponent,
     NavBarComponent
   ]
+
 })
 export class CoreModule {
   name = "CoreModule"

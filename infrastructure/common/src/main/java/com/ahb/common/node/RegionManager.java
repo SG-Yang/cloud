@@ -7,5 +7,6 @@ import com.ahb.common.web.Distributor;
  */
 public interface RegionManager {
     Distributor getDistributor(String regionId);
+    void inject(CloudManager cloudManager);
     void init();
 }

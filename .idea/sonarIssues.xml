@@ -68,6 +68,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/core.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts">
           <value>
             <set />
@@ -193,6 +208,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/Transformable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/book/Book.java">
           <value>
             <set />
@@ -213,7 +233,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DefaultDomain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Domain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainDesc.java">
           <value>
             <set />
           </value>
@@ -229,6 +259,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/PubLoginDomain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionDomain.java">
           <value>
             <set />
           </value>
@@ -318,6 +353,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/Listener.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/LocalExchange.java">
           <value>
             <set />
@@ -383,12 +423,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/RegionResourceLocatorImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/RunState.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/SelfCloudManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AVLNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AVLTree.java">
           <value>
             <set />
           </value>
@@ -408,6 +463,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/GlobalResourceLocatorImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/Holder.java">
           <value>
             <set />
@@ -419,6 +479,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/PubRegion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RBTree.java">
           <value>
             <set />
           </value>

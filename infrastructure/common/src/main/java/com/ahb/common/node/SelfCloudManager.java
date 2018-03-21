@@ -47,26 +47,29 @@ public class SelfCloudManager implements CloudManager {
         ExchangeInfo exchangeInfo = ExchangeInfoBuilder.newInstance()
                 .ofEType(ExchangeType.RESP)
                 .ofToken(req.getExInfo()
-                .getToken())
+                        .getToken())
                 .ofFromNode(joiner)
                 .build();
 
         return new JoinResp(exchangeInfo, target, joiner);
     }
 
-    void accept(NodeAxis target) {
-        axis.add(NodeInfo.toNodeId(target), new ProxyCloudManager(target));
+    ProxyCloudManager accept(NodeAxis target) {
+        ProxyCloudManager proxyCloudManager = new ProxyCloudManager(target);
+        axis.add(NodeInfo.toNodeId(target), proxyCloudManager);
+        return proxyCloudManager;
     }
 
     @Override
     public JoinResp doJoin(JoinReq req) throws TException {
         NodeAxis fromNode = req.exInfo.getFromNode();
-        accept(fromNode);
+        ProxyCloudManager cloudManager = accept(fromNode);
         ExchangeInfo exchangeInfo = new ExchangeInfo();
         exchangeInfo.setEType(ExchangeType.RESP);
         exchangeInfo.setToken(req.getExInfo().getToken());
         JoinResp resp = new JoinResp();
         resp.setExInfo(exchangeInfo);
+        node.injectResource(cloudManager);
         return resp;
     }
 

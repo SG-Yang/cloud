@@ -28,9 +28,9 @@ public class ConnectionManagerImpl implements ConnectionManager {
     private Thread serveThread;
     private static final Map<String, Integer> JOIN_REQUESTS = Maps.newHashMap();
 
-    enum CMHolder {
+    public enum CMHolder {
         INSTANCE;
-        ConnectionManagerImpl connectionManager;
+        public ConnectionManagerImpl connectionManager;
 
         CMHolder() {
             connectionManager = new ConnectionManagerImpl();
@@ -174,6 +174,7 @@ public class ConnectionManagerImpl implements ConnectionManager {
             }
         }
 
+        //TODO: receive do join event then add to resource manager.
         @Override
         public JoinResp doJoin(JoinReq req) throws TException {
             return connectAxis.getSelf().doJoin(req);

@@ -18,6 +18,7 @@ public class WebEngineImpl implements WebEngin, LifeCycle {
     protected static final Logger LOGGER = LoggerFactory.getLogger(WebEngineImpl.class);
     private static int port = 8080;
     private static String WEB_BASE = "infrastructure/api/src/main/resources/public";
+    private Thread webEngineThread;
 
     public void start() throws Exception {
         Server server = new Server(port);
@@ -45,19 +46,23 @@ public class WebEngineImpl implements WebEngin, LifeCycle {
         resourceHandler.setHandler(sessionHandler);
 
         server.setHandler(resourceHandler);
-        try {
-            server.start();
-            LOGGER.info("Web server serve at port " + port);
-            server.join();
-        } catch (Exception e) {
-            server.dumpStdErr();
-            throw new RuntimeException(e);
-        }
+        webEngineThread = new Thread(() -> {
+            try {
+                server.start();
+                LOGGER.info("Web server serve at port " + port);
+                server.join();
+            } catch (Exception e) {
+                server.dumpStdErr();
+                throw new RuntimeException(e);
+            }
+        });
+
+        webEngineThread.start();
     }
 
     @Override
     public void stop() throws Exception {
-
+        webEngineThread.interrupt();
     }
 
     @Override

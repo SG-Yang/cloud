@@ -8,11 +8,12 @@ import {CoreModule} from "./modules/core/core.module";
 import {RouterModule, Routes} from "@angular/router";
 import {PageNotFoundComponent} from "./modules/core/common/PageNotFoundComponent";
 import {LoginComponent} from "./modules/party/login/Login";
+import {DashboardComponent} from "./modules/party/dashboard/dashboard.component";
 
 
 const routes: Routes = [
   {path: 'Login', component: LoginComponent, outlet: 'rootOutlet'},
-  {path: 'Dashboard', component: PageNotFoundComponent, outlet: 'rootOutlet'},
+  {path: 'Dashboard', component: DashboardComponent, outlet: 'rootOutlet'},
   {path: 'Marketplace', component: PageNotFoundComponent, outlet: 'rootOutlet'},
 ];
 
@@ -23,7 +24,7 @@ const routes: Routes = [
     JsonpModule,
     ReactiveFormsModule,
     CoreModule,
-    RouterModule.forRoot(routes,{ enableTracing: true }),
+    RouterModule.forRoot(routes,{enableTracing:true}),
   ],
   declarations: [
     AppComponent

@@ -61,6 +61,7 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modules_core_common_PageNotFoundComponent__ = __webpack_require__("../../../../../src/app/modules/core/common/PageNotFoundComponent.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__modules_party_login_Login__ = __webpack_require__("../../../../../src/app/modules/party/login/Login.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__modules_party_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/modules/party/dashboard/dashboard.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -76,9 +77,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var routes = [
     { path: 'Login', component: __WEBPACK_IMPORTED_MODULE_8__modules_party_login_Login__["a" /* LoginComponent */], outlet: 'rootOutlet' },
-    { path: 'Dashboard', component: __WEBPACK_IMPORTED_MODULE_7__modules_core_common_PageNotFoundComponent__["a" /* PageNotFoundComponent */], outlet: 'rootOutlet' },
+    { path: 'Dashboard', component: __WEBPACK_IMPORTED_MODULE_9__modules_party_dashboard_dashboard_component__["a" /* DashboardComponent */], outlet: 'rootOutlet' },
     { path: 'Marketplace', component: __WEBPACK_IMPORTED_MODULE_7__modules_core_common_PageNotFoundComponent__["a" /* PageNotFoundComponent */], outlet: 'rootOutlet' },
 ];
 var AppModule = (function () {
@@ -795,11 +797,11 @@ var TypeService = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__common_PageNotFoundComponent__ = __webpack_require__("../../../../../src/app/modules/core/common/PageNotFoundComponent.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__common_MainComponent__ = __webpack_require__("../../../../../src/app/modules/core/common/MainComponent.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__common_SourceComponent__ = __webpack_require__("../../../../../src/app/modules/core/common/SourceComponent.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__permission_permission_PermissionService__ = __webpack_require__("../../../../../src/app/modules/permission/permission/PermissionService.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__common_MenuService__ = __webpack_require__("../../../../../src/app/modules/core/common/MenuService.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__party_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/modules/party/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -826,10 +828,10 @@ var CoreModule = (function () {
     CoreModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_12__angular_platform_browser__["a" /* BrowserModule */],
-                __WEBPACK_IMPORTED_MODULE_11__angular_router__["b" /* RouterModule */],
-                __WEBPACK_IMPORTED_MODULE_10__angular_forms__["b" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_10__angular_forms__["c" /* ReactiveFormsModule */]
+                __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__["a" /* BrowserModule */],
+                __WEBPACK_IMPORTED_MODULE_9__angular_router__["b" /* RouterModule */],
+                __WEBPACK_IMPORTED_MODULE_8__angular_forms__["b" /* FormsModule */],
+                __WEBPACK_IMPORTED_MODULE_8__angular_forms__["c" /* ReactiveFormsModule */]
             ],
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_7__common_SourceComponent__["a" /* SourceComponent */],
@@ -838,18 +840,11 @@ var CoreModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_4__party_login_Login__["a" /* LoginComponent */],
                 __WEBPACK_IMPORTED_MODULE_3__common_HeaderComponent__["a" /* HeaderComponent */],
                 __WEBPACK_IMPORTED_MODULE_2__common_FooterComponent__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_1__common_NavBarComponent__["a" /* NavBarComponent */]
+                __WEBPACK_IMPORTED_MODULE_1__common_NavBarComponent__["a" /* NavBarComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__party_dashboard_dashboard_component__["a" /* DashboardComponent */]
             ],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_9__common_MenuService__["a" /* MenuService */],
-                __WEBPACK_IMPORTED_MODULE_8__permission_permission_PermissionService__["a" /* PermissionHttpService */],
-                __WEBPACK_IMPORTED_MODULE_7__common_SourceComponent__["a" /* SourceComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__common_MainComponent__["a" /* MainComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__common_PageNotFoundComponent__["a" /* PageNotFoundComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__party_login_Login__["a" /* LoginComponent */],
-                __WEBPACK_IMPORTED_MODULE_3__common_HeaderComponent__["a" /* HeaderComponent */],
-                __WEBPACK_IMPORTED_MODULE_2__common_FooterComponent__["a" /* FooterComponent */],
-                __WEBPACK_IMPORTED_MODULE_1__common_NavBarComponent__["a" /* NavBarComponent */]
+                __WEBPACK_IMPORTED_MODULE_12__common_HttpService__["a" /* HttpService */]
             ],
             exports: [
                 __WEBPACK_IMPORTED_MODULE_7__common_SourceComponent__["a" /* SourceComponent */],
@@ -863,6 +858,75 @@ var CoreModule = (function () {
         })
     ], CoreModule);
     return CoreModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/party/dashboard/dashboard.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"dashboard.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/party/dashboard/dashboard.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  dashboard works!\n</p>\n<canvas #canvas (mousedown)=\"onMouseDown($event)\" (mouseup)=\"onMouseUp($event)\">\n</canvas>\n\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/party/dashboard/dashboard.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Req__ = __webpack_require__("../../../../../src/app/modules/Req.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var DashboardComponent = (function () {
+    function DashboardComponent(httpService) {
+        this.httpService = httpService;
+    }
+    DashboardComponent.prototype.ngOnInit = function () {
+        var req = new __WEBPACK_IMPORTED_MODULE_2__Req__["a" /* Req */]('get', {});
+        this.httpService.setComponent('ahb/admin/dashboard');
+        this.httpService.postItems(req);
+    };
+    DashboardComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-dashboard',
+            template: __webpack_require__("../../../../../src/app/modules/party/dashboard/dashboard.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/party/dashboard/dashboard.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__core_common_HttpService__["a" /* HttpService */]])
+    ], DashboardComponent);
+    return DashboardComponent;
 }());
 
 
@@ -1025,57 +1089,6 @@ var UserLoginService = (function (_super) {
 /***/ (function(module, exports) {
 
 module.exports = "<base href=\"../\">\n<div class=\"w3-container\">\n  <div id=\"id001\">\n    <div class=\"w3-modal-content w3-card-4 w3-animate-zoom\" style=\"max-width:600px\">\n      <div class=\"w3-center\"><br>\n        <span onclick=\"document.getElementById('id01').style.display='none'\"\n              class=\"w3-button w3-xlarge w3-hover-red w3-display-topright\" title=\"Close Modal\"></span>\n        <img src=\"../../../../assets/loginicon.png\" alt=\"Avatar\" style=\"width:20%\" class=\"w3-circle w3-margin-top\">\n      </div>\n\n      <form class=\"w3-container\" (ngSubmit)=\"doLogin()\" action=\"/action_page.php\">\n        <div class=\"w3-section\">\n          <label><b>Username</b></label>\n          <input class=\"w3-input w3-border w3-margin-bottom\" type=\"text\" name=\"username\"\n                 [(ngModel)]=\"loginUser.username\"\n                 required>\n          <label><b>Password</b></label>\n          <input class=\"w3-input w3-border\" type=\"password\" [(ngModel)]=\"loginUser.password\" name=\"password\" required>\n          <button class=\"w3-button w3-blue-grey\" op=\"submit\">Login</button>\n          <button onclick=\"document.getElementById('id01').style.display='none'\" type=\"button\"\n                  class=\"w3-button w3-blue-grey\">\n            Reset\n          </button>\n        </div>\n      </form>\n      <div class=\"w3-container w3-border-top w3-padding-16 w3-light-grey\">\n        <span class=\"w3-right w3-padding w3-hide-small\">Forgot <a href=\"#\">password?</a></span>\n      </div>\n    </div>\n  </div>\n</div>\n{{diagnostic}}\n<!--\n-->\n"
-
-/***/ }),
-
-/***/ "../../../../../src/app/modules/permission/permission/PermissionService.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PermissionHttpService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-/**
- * Created by aheroboy on 12/11/2017.
- */
-var PermissionHttpService = (function (_super) {
-    __extends(PermissionHttpService, _super);
-    function PermissionHttpService(http) {
-        var _this = _super.call(this, http) || this;
-        _this.setComponent("searchItems");
-        return _this;
-    }
-    PermissionHttpService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_http__["b" /* Http */]])
-    ], PermissionHttpService);
-    return PermissionHttpService;
-}(__WEBPACK_IMPORTED_MODULE_1__core_common_HttpService__["a" /* HttpService */]));
-
-
 
 /***/ }),
 

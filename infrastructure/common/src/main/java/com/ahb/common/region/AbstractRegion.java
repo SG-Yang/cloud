@@ -1,7 +1,9 @@
 package com.ahb.common.region;
 
+import com.ahb.common.domain.DefaultDomain;
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.PubLoginDomain;
+import com.ahb.common.node.CloudManager;
+import com.ahb.common.node.RegionResourceLocatorImpl;
 import com.google.common.collect.Maps;
 
 import java.util.Map;
@@ -12,20 +14,24 @@ import java.util.Map;
  */
 public abstract class AbstractRegion implements Region<Domain> {
 
-    private Store persistStore;
-    private Map<String, Store> distributeStores = Maps.newHashMap();
+    protected Store persistStore;
+    protected Map<String, Store> distributeStores = Maps.newHashMap();
+    private Domain regionDomain;
     private String regionPath;
     private String regionName;
-    private ResourceLocator resourceLocator = new ResourceLocatorImpl();
+    private RegionResourceLocatorImpl resourceLocator;
 
     @Override
     public String getPath() {
         return regionPath;
     }
 
-    public AbstractRegion() {
+    public AbstractRegion(Domain regionDomain) {
         this.persistStore = StoreImpl.StoreHolder.INSTANCE.store;
-        this.distributeStores.put("demo",new StoreImpl());
+        this.resourceLocator = new RegionResourceLocatorImpl();
+        this.regionDomain = regionDomain;
+        this.regionPath = regionDomain.getDomainId();
+        this.regionName = regionPath;
     }
 
     @Override
@@ -35,8 +41,7 @@ public abstract class AbstractRegion implements Region<Domain> {
                 this.persistStore.save(installable);
             }
 
-            String index = resourceLocator.locate(installable);
-            distributeStores.get(index).save(installable);
+            distributeStores.get(installable.getDomainId()).save(installable);
 
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -46,7 +51,45 @@ public abstract class AbstractRegion implements Region<Domain> {
     //TODO:
     @Override
     public Domain getDomain(String domainId) {
-        return new PubLoginDomain("user","User Login Domain");
+        return new DefaultDomain("user", "User Login Domain");
         //return persistStore.get(domainId);
+    }
+
+    @Override
+    public void register(CloudManager cloudManager) {
+        resourceLocator.install(cloudManager);
+    }
+
+    public String getRegionPath() {
+        return regionPath;
+    }
+
+    public void setRegionPath(String regionPath) {
+        this.regionPath = regionPath;
+    }
+
+    @Override
+    public String getRegionName() {
+        return regionName;
+    }
+
+    public void setRegionName(String regionName) {
+        this.regionName = regionName;
+    }
+
+    public Domain getRegionDomain() {
+        return regionDomain;
+    }
+
+    public void setRegionDomain(Domain regionDomain) {
+        this.regionDomain = regionDomain;
+    }
+
+    public RegionResourceLocatorImpl getResourceLocator() {
+        return resourceLocator;
+    }
+
+    public void setResourceLocator(RegionResourceLocatorImpl resourceLocator) {
+        this.resourceLocator = resourceLocator;
     }
 }

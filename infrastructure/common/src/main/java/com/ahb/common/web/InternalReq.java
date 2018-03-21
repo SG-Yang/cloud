@@ -58,4 +58,16 @@ public class InternalReq {
     public void setType(HandlerType type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "InternalReq{" +
+                "payload=" + payload +
+                ", targetUrl='" + targetUrl + '\'' +
+                ", regionUrl='" + regionUrl + '\'' +
+                ", domainId='" + domainId + '\'' +
+                ", session=" + session +
+                ", type=" + type +
+                '}';
+    }
 }

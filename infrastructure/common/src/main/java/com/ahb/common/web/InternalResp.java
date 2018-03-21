@@ -1,6 +1,8 @@
 package com.ahb.common.web;
 
 import com.google.gson.Gson;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -8,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by aheroboy on 16/3/2018.
  */
 public class InternalResp {
+    private static final Logger LOGGER = LoggerFactory.getLogger(InternalResp.class);
     private HttpServletResponse resp;
     private ViewPayload payload;
 
@@ -17,7 +20,9 @@ public class InternalResp {
 
     public void output() {
         try {
-            resp.getWriter().print(new Gson().toJson(payload));
+            String jsonPayload = new Gson().toJson(payload);
+            LOGGER.info("Response is:" + jsonPayload);
+            resp.getWriter().print(jsonPayload);
             resp.flushBuffer();
         } catch (Exception e) {
             e.printStackTrace();

@@ -12,6 +12,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicReference;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by aheroboy on 9/3/2018.
@@ -73,8 +75,10 @@ public class NodeImpl implements Node {
             state.set(RunState.INIT);
             initConnectionManager();
             initStore();
-            initRegionManger();
-            initWebEngine();
+            if (isAPIServer) {
+                initRegionManger();
+                initWebEngine();
+            }
             initMonitors();
         } catch (Exception e) {
             e.printStackTrace();
@@ -139,6 +143,11 @@ public class NodeImpl implements Node {
     @Override
     public void stop() {
         state.set(RunState.STOPED);
+    }
+
+    @Override
+    public void injectResource(CloudManager cloudManager) {
+        regionManager.inject(cloudManager);
     }
 
     @Override

@@ -1,5 +1,7 @@
 package com.ahb.common.web;
 
+import com.ahb.common.domain.Domain;
+import com.ahb.common.region.AbstractRegion;
 import com.ahb.common.region.Holder;
 import com.ahb.common.region.Region;
 
@@ -9,13 +11,12 @@ import java.util.Collection;
  * Created by aheroboy on 16/3/2018.
  */
 public abstract class AbstractHolder implements Distributor, Holder {
-    @Override
-    public Region get(String regionId) {
-        return null;
+    protected Region region;
+    public AbstractHolder(Region<Domain> domainRegion){
+        this.region = domainRegion;
     }
-
     @Override
-    public Collection<Region> getAll() {
+    public Region get() {
         return null;
     }
 
