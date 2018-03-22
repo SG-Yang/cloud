@@ -6,7 +6,7 @@
     <div *ngFor="let searchField of searchDomain.searchFieldDefs" class="w3-container">
       <label class="w3-card">{{searchField.fieldName}}</label>
       <select name="{{searchField.fieldName}}" [(ngModel)] = "searchField.selectedOpType">
-        <option *ngFor="let op of searchField.supportedOperationTypes" [ngValue]="op">{{op.description}}
+        <option *ngFor="let operateType of searchField.supportedOperationTypes" [ngValue]="operateType">{{operateType.description}}
         </option>
       </select>
       <!--<div *ngIf="searchField.fieldType=='Date'">-->
@@ -17,11 +17,11 @@
         <!--</mat-form-field>-->
       <!--</div>-->
       <!--<div *ngIf="searchField.fieldType!='Date'">-->
-        <input name="{{searchField.fieldName}}" [(ngModel)]= searchField.fieldValue op="text">
+        <input name="{{searchField.fieldName}}" [(ngModel)]= searchField.fieldValue operateType="text">
       <!--</div>-->
     </div>
     <div>
-      <input op="submit" value="Search">
+      <input operateType="submit" value="Search">
     </div>
   </div>
 </form>

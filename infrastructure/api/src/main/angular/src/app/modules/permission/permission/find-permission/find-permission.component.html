@@ -6,10 +6,10 @@
     </div>
     <div *ngFor="let critera of criteras" class="w3-container w3-input-group w3-border-blue-grey">
       <label class="w3-label">{{critera.fieldName}}:</label>
-      <input class="w3-input" name="{{critera.fieldName}}" op="text" [(ngModel)]="critera.fieldValue">
+      <input class="w3-input" name="{{critera.fieldName}}" operateType="text" [(ngModel)]="critera.fieldValue">
     </div>
     <p>
-      <button op="submit" class="w3-btn w3-padding w3-teal">Search</button>
+      <button operateType="submit" class="w3-btn w3-padding w3-teal">Search</button>
     </p>
   </div>
 
