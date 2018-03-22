@@ -6,11 +6,7 @@ package com.ahb.common.domain;
 public class DefaultDomain extends AbstractDomain {
     public static final String NAME = "user";
 
-    public DefaultDomain() {
-        this(NAME, NAME);
-    }
-
-    public DefaultDomain(String name, String id) {
-        super(name, id);
+    public DefaultDomain(DomainDesc domainDesc) {
+        super(NAME, NAME, domainDesc);
     }
 }

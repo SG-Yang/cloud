@@ -2,18 +2,19 @@ package com.ahb.common.node;
 
 import com.ahb.common.Conf;
 import com.ahb.common.ConfImpl;
-import com.ahb.common.region.Store;
-import com.ahb.common.region.StoreImpl;
+import com.ahb.common.monitor.MonitorManager;
+import com.ahb.common.region.RegionManager;
+import com.ahb.common.region.RegionManagerImpl;
+import com.ahb.common.store.Store;
+import com.ahb.common.store.StoreImpl;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-import com.ahb.common.web.WebEngin;
+import com.ahb.common.web.WebEngine;
 import com.ahb.common.web.WebEngineImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by aheroboy on 9/3/2018.
@@ -21,13 +22,12 @@ import java.util.concurrent.locks.ReentrantLock;
 public class NodeImpl implements Node {
     protected static final Logger LOGGER = LoggerFactory.getLogger(NodeImpl.class);
     private ConnectionManager connectionManager;
-    private WebEngin webEngin;
+    private WebEngine webEngine;
     private AtomicReference<RunState> state = new AtomicReference<>();
-    private Thread monitor;
-    private Thread heartBeat;
     private Conf conf;
     private NodeInfo nodeInfo;
     private RegionManager regionManager;
+    private MonitorManager monitorManager;
     private Store store;
     private volatile boolean isAPIServer = Boolean.FALSE;
 
@@ -56,7 +56,7 @@ public class NodeImpl implements Node {
 
     @Override
     public void distribute(InternalReq req, InternalResp resp) {
-        regionManager.getDistributor(req.getRegionUrl()).distribute(req, resp);
+        regionManager.distribute(req, resp);
     }
 
     @Override
@@ -64,19 +64,21 @@ public class NodeImpl implements Node {
         init();
         LOGGER.info("Server start at :" + this.getNodeInfo().getNodeId());
         if (isAPIServer) {
-            webEngin.start();
+            webEngine.start();
         }
-        monitor.start();
-        heartBeat.start();
+        connectionManager.start();
+        regionManager.start();
+        store.start();
+        monitorManager.start();
     }
 
-    private synchronized void init() {
+    public synchronized void init() {
         try {
             state.set(RunState.INIT);
             initConnectionManager();
             initStore();
+            initRegionManger();
             if (isAPIServer) {
-                initRegionManger();
                 initWebEngine();
             }
             initMonitors();
@@ -93,41 +95,18 @@ public class NodeImpl implements Node {
     }
 
     private void initMonitors() {
-        monitor = new Thread(() -> {
-            while (state.get().equals(RunState.RUNNING)) {
-                //System.out.println(Thread.currentThread().getName() + " Running");
-                try {
-                    Thread.sleep(1000);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-            LOGGER.info("Server stopped.....");
-        }, String.join(":", new String[]{conf.getIp(), conf.getPort() + ""}));
-
-        heartBeat = new Thread(() -> {
-            //TODO: send heart beat event.
-            while (state.get().equals(RunState.RUNNING)) {
-                try {
-                    connectionManager.areNeighborsAlive();
-                    Thread.sleep(5000);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
+        monitorManager = new MonitorManager(connectionManager, conf);
+        monitorManager.init();
     }
 
     private void initWebEngine() {
-        if (isAPIServer) {
-            webEngin = new WebEngineImpl();
-        }
+        webEngine = new WebEngineImpl(conf);
+        webEngine.init();
     }
 
     private void initConnectionManager() {
         connectionManager = ConnectionManagerImpl.CMHolder.INSTANCE.connectionManager;
-        connectionManager.buildConnectionManager();
-        connectionManager.serve();
+        connectionManager.init();
     }
 
     private void initRegionManger() {
@@ -147,7 +126,9 @@ public class NodeImpl implements Node {
 
     @Override
     public void injectResource(CloudManager cloudManager) {
-        regionManager.inject(cloudManager);
+        if(isAPIServer){
+            regionManager.inject(cloudManager);
+        }
     }
 
     @Override

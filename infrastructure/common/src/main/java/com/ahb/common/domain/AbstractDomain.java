@@ -37,9 +37,10 @@ public class AbstractDomain implements Domain {
     private View view;
     private DomainDesc domainDesc;
 
-    public AbstractDomain(String name, String id) {
+    public AbstractDomain(String name, String id, DomainDesc domainDesc) {
         this.domainId = id;
         this.domainName = name;
+        this.domainDesc = domainDesc;
         this.view = new ViewImpl();
     }
 
@@ -67,8 +68,8 @@ public class AbstractDomain implements Domain {
     }
 
     @Override
-    public String getBusinessId() {
-        return null;
+    public long getBusinessId() {
+        return 0;
     }
 
     @Override

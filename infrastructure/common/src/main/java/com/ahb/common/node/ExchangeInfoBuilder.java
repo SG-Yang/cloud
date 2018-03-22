@@ -13,6 +13,7 @@ public class ExchangeInfoBuilder {
     private ExchangeType eType;
     private NodeAxis initNode;
     private int step;
+    private String bizObj;
 
     public ExchangeInfoBuilder ofToken(String token) {
         this.token = token;
@@ -39,6 +40,11 @@ public class ExchangeInfoBuilder {
         return this;
     }
 
+    public ExchangeInfoBuilder ofBizObj(String obj) {
+        this.bizObj = obj;
+        return this;
+    }
+
     private ExchangeInfoBuilder() {
     }
 
@@ -47,6 +53,6 @@ public class ExchangeInfoBuilder {
     }
 
     public ExchangeInfo build() {
-        return new ExchangeInfo(token, fromNode, eType, initNode, step);
+        return new ExchangeInfo(token, fromNode, eType, initNode, step, bizObj);
     }
 }

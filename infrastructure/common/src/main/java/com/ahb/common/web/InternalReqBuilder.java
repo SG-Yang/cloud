@@ -1,5 +1,6 @@
 package com.ahb.common.web;
 
+import com.ahb.common.region.Criteria;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
 

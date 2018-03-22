@@ -16,7 +16,8 @@ public enum ExchangeType implements org.apache.thrift.TEnum {
   REQ(6),
   RESP(7),
   IGNORE(8),
-  CLEAN_TOKEN(9);
+  CLEAN_TOKEN(9),
+  BIZ_DIS(10);
 
   private final int value;
 
@@ -55,6 +56,8 @@ public enum ExchangeType implements org.apache.thrift.TEnum {
         return IGNORE;
       case 9:
         return CLEAN_TOKEN;
+      case 10:
+        return BIZ_DIS;
       default:
         return null;
     }

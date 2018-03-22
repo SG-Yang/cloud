@@ -9,7 +9,8 @@ enum ExchangeType {
     REQ = 6,
     RESP = 7,
     IGNORE = 8,
-    CLEAN_TOKEN = 9
+    CLEAN_TOKEN = 9,
+    BIZ_DIS
 }
 
 //Node info
@@ -29,7 +30,8 @@ struct ExchangeInfo {
     2: NodeAxis fromNode,
     3: ExchangeType eType,
     4: NodeAxis initNode,
-    5: i32 step
+    5: i32 step,
+    6: string businessObj
 }
 struct JoinReq {
     1: ExchangeInfo exInfo
@@ -47,8 +49,9 @@ exception InvalidExchange {
 
 //Exchange Service
 service ExchangeService {
-    ExchangeInfo exchange(1: ExchangeInfo input) throws (1: InvalidExchange why),
+    ExchangeInfo exchange(1: ExchangeInfo input),
     JoinResp requestJoin(1: JoinReq req),
     JoinResp doJoin(1: JoinReq req),
-    void cleanToken(1:ExchangeInfo token)
+    oneway void cleanToken(1:ExchangeInfo token)
+
 }

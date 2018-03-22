@@ -9,9 +9,15 @@ import java.util.Collection;
  */
 public class RegionDomain extends AbstractRegion {
 
-    public RegionDomain(Domain regionDomain){
+    public RegionDomain(Domain regionDomain) {
         super(regionDomain);
     }
+
+    public RegionDomain(Domain regionDomain, DomainValueHolder valueHolder) {
+        super(regionDomain);
+        //TODO: init region from saved region domain.
+    }
+
     @Override
     public Collection<Domain> getAll() {
         return null;

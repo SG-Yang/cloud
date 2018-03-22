@@ -12,20 +12,23 @@ public class ConfImpl implements Conf {
     private String ip;
     private int port;
     private Node node;
+    private int webPort;
 
     public ConfImpl() {
-        this.ip = Node.CENTOER_NODE_IP;
-        this.port = Node.CENTOER_NODE_PORT;
+        this(Node.CENTOER_NODE_IP, Node.CENTOER_NODE_PORT);
     }
 
     public ConfImpl(int port) {
-        this.ip = Node.CENTOER_NODE_IP;
-        this.port = port;
+        this(Node.CENTOER_NODE_IP, port);
     }
 
     public ConfImpl(String ip, int port) {
         this.ip = Optional.ofNullable(ip).orElse(Node.CENTOER_NODE_IP);
         this.port = port;
+        String webPort = System.getProperty("WebPort");
+        if(StringUtils.isNotBlank(webPort)){
+            this.webPort = Integer.valueOf(webPort);
+        }
     }
 
     @Override
@@ -65,5 +68,13 @@ public class ConfImpl implements Conf {
     @Override
     public int getPort() {
         return port;
+    }
+
+    public int getWebPort() {
+        return webPort;
+    }
+
+    public void setWebPort(int webPort) {
+        this.webPort = webPort;
     }
 }

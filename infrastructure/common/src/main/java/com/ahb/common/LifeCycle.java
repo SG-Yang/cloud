@@ -17,4 +17,5 @@ public interface LifeCycle {
     boolean isStopping();
 
     boolean isStopped();
+    void init();
 }

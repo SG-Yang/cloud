@@ -1,7 +1,11 @@
 package com.ahb.common.region;
 
+import com.ahb.common.store.Store;
+import com.ahb.common.store.StoreImpl;
 import com.google.common.collect.Lists;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Consumer;
@@ -57,6 +61,20 @@ public class AVLTree<T extends Comparable> {
 
     public boolean isEmpty() {
         return root == null;
+    }
+
+    public Collection<T> all() {
+        return getAll(this.root);
+    }
+
+    private Collection<T> getAll(AvlNode<T> t) {
+        Collection<T> locations = Collections.EMPTY_LIST;
+        if (t != null) {
+            locations.addAll(getAll(t.left));
+            locations.add(t.element);
+            locations.addAll(getAll(t.right));
+        }
+        return locations;
     }
 
     public void printTree() {
@@ -179,10 +197,19 @@ public class AVLTree<T extends Comparable> {
         public Location(long id) {
             this.id = id;
         }
-        public Location(long id,int size, Store store) {
+
+        public Location(long id, int size, Store store) {
             this.id = id;
             this.store = store;
             this.size = size;
+        }
+
+        public Store getStore() {
+            return store;
+        }
+
+        public void setStore(Store store) {
+            this.store = store;
         }
 
         @Override
@@ -209,7 +236,7 @@ public class AVLTree<T extends Comparable> {
         index.forEach(new Consumer<Integer>() {
             @Override
             public void accept(Integer integer) {
-                t.insert(new Location(init.get(),integer,new StoreImpl()));
+                t.insert(new Location(init.get(), integer, new StoreImpl()));
                 init.set(init.get() + integer);
             }
         });

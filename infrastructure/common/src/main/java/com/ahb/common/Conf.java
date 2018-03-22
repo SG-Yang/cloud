@@ -6,7 +6,6 @@ import com.ahb.common.node.Node;
  * Created by aheroboy on 9/3/2018.
  */
 public interface Conf {
-    int webPort = 8080;
     String getIp();
     int getPort();
     void setIp(String ip);
@@ -15,4 +14,5 @@ public interface Conf {
     Node getNode();
     boolean isCenterNode();
     boolean getServerType();
+    int getWebPort();
 }

@@ -8,14 +8,12 @@ import com.ahb.common.domain.HandlerType;
 public class InternalReq {
     private OperatePayload payload;
     private String targetUrl;
-    private String regionUrl;
-    private String domainId;
     private CloudSession session;
     private HandlerType type;
 
     public InternalReq(OperatePayload payload) {
         this.payload = payload;
-        this.type = payload.getOp();
+        this.type = payload.getOperateType();
     }
 
     public CloudSession getSession() {
@@ -36,19 +34,19 @@ public class InternalReq {
     }
 
     public String getRegionUrl() {
-        return regionUrl;
+        return this.payload.getCriteria().getRegionUrl();
     }
 
     public void setRegionUrl(String regionUrl) {
-        this.regionUrl = regionUrl;
+        this.payload.getCriteria().setRegionUrl(regionUrl);
     }
 
     public String getDomainId() {
-        return domainId;
+        return this.payload.getCriteria().getDomainId();
     }
 
     public void setDomainId(String domainId) {
-        this.domainId = domainId;
+        this.payload.getCriteria().setDomainId(domainId);
     }
 
     public HandlerType getType() {
@@ -59,13 +57,19 @@ public class InternalReq {
         this.type = type;
     }
 
+    public OperatePayload getPayload() {
+        return payload;
+    }
+
+    public void setPayload(OperatePayload payload) {
+        this.payload = payload;
+    }
+
     @Override
     public String toString() {
         return "InternalReq{" +
                 "payload=" + payload +
                 ", targetUrl='" + targetUrl + '\'' +
-                ", regionUrl='" + regionUrl + '\'' +
-                ", domainId='" + domainId + '\'' +
                 ", session=" + session +
                 ", type=" + type +
                 '}';

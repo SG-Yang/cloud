@@ -23,7 +23,10 @@ public class ProxyCloudManager implements CloudManager {
 
     private void createClientId() {
         try {
-            client = ClientBuilder.getBuilder().ofHost(nodeInfo.getNodeId().getIp()).ofPort(nodeInfo.getNodeId().getPort()).build();
+            client = ClientBuilder.getBuilder()
+                    .ofHost(nodeInfo.getNodeId().getIp())
+                    .ofPort(nodeInfo.getNodeId().getPort())
+                    .build();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -41,7 +44,7 @@ public class ProxyCloudManager implements CloudManager {
     }
 
     @Override
-    public ExchangeInfo exchange(ExchangeInfo input) throws InvalidExchange, TException {
+    public ExchangeInfo exchange(ExchangeInfo input) throws TException {
         try {
             return client.exchange(input);
         } catch (Exception e) {

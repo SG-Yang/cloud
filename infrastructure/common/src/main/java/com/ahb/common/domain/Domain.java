@@ -13,6 +13,6 @@ public interface Domain extends HotInstallable<Handler>,ViewAble {
     void handle(InternalReq req, InternalResp resp);
 
     String getDomainId();
-    String getBusinessId();
+    long getBusinessId();
     int getLocateVersion();
 }

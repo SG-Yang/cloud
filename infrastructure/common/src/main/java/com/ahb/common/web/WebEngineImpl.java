@@ -1,5 +1,6 @@
 package com.ahb.common.web;
 
+import com.ahb.common.Conf;
 import com.ahb.common.LifeCycle;
 import com.ahb.common.node.NodeImpl;
 import org.eclipse.jetty.server.Handler;
@@ -14,14 +15,30 @@ import org.slf4j.LoggerFactory;
 /**
  * Created by aheroboy on 15/3/2018.
  */
-public class WebEngineImpl implements WebEngin, LifeCycle {
+public class WebEngineImpl implements WebEngine, LifeCycle {
     protected static final Logger LOGGER = LoggerFactory.getLogger(WebEngineImpl.class);
-    private static int port = 8080;
+    private int port = 8080;
     private static String WEB_BASE = "infrastructure/api/src/main/resources/public";
     private Thread webEngineThread;
+    private Server server;
+    private Conf conf;
 
+    public WebEngineImpl(Conf conf){
+        this.conf = conf;
+    }
     public void start() throws Exception {
-        Server server = new Server(port);
+        webEngineThread.start();
+    }
+
+    @Override
+    public void stop() throws Exception {
+        webEngineThread.interrupt();
+    }
+
+    @Override
+    public void init() {
+        this.port = conf.getWebPort();
+        server = new Server(port);
         ResourceHandler resourceHandler = new ResourceHandler();
 
         // Add the ResourceHandler to the server.
@@ -56,13 +73,6 @@ public class WebEngineImpl implements WebEngin, LifeCycle {
                 throw new RuntimeException(e);
             }
         });
-
-        webEngineThread.start();
-    }
-
-    @Override
-    public void stop() throws Exception {
-        webEngineThread.interrupt();
     }
 
     @Override

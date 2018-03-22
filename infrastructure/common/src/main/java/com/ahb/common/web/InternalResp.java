@@ -29,7 +29,6 @@ public class InternalResp {
             //TODO:
         }
     }
-
     public HttpServletResponse getResp() {
         return resp;
     }

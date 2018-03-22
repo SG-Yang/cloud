@@ -2,10 +2,17 @@ package com.ahb.common.region;
 
 import com.ahb.common.domain.DefaultDomain;
 import com.ahb.common.domain.Domain;
+import com.ahb.common.domain.DomainDesc;
+import com.ahb.common.domain.DomainValueHolder;
 import com.ahb.common.node.CloudManager;
-import com.ahb.common.node.RegionResourceLocatorImpl;
+import com.ahb.common.store.Store;
+import com.ahb.common.store.StoreImpl;
+import com.ahb.common.web.InternalReq;
+import com.ahb.common.web.InternalResp;
 import com.google.common.collect.Maps;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -14,8 +21,7 @@ import java.util.Map;
  */
 public abstract class AbstractRegion implements Region<Domain> {
 
-    protected Store persistStore;
-    protected Map<String, Store> distributeStores = Maps.newHashMap();
+    protected Map<String,Domain> domainDefinitions = Maps.newHashMap();
     private Domain regionDomain;
     private String regionPath;
     private String regionName;
@@ -27,7 +33,6 @@ public abstract class AbstractRegion implements Region<Domain> {
     }
 
     public AbstractRegion(Domain regionDomain) {
-        this.persistStore = StoreImpl.StoreHolder.INSTANCE.store;
         this.resourceLocator = new RegionResourceLocatorImpl();
         this.regionDomain = regionDomain;
         this.regionPath = regionDomain.getDomainId();
@@ -36,22 +41,28 @@ public abstract class AbstractRegion implements Region<Domain> {
 
     @Override
     public void install(Domain installable) {
-        try {
-            if (persistStore != null) {
-                this.persistStore.save(installable);
-            }
+        domainDefinitions.put(installable.getDomainId(),installable);
+        //TODO: Persist domain details descriptions.
+    }
 
-            distributeStores.get(installable.getDomainId()).save(installable);
+    @Override
+    public void distribute(InternalReq req, InternalResp resp) {
+        Collection<Store> stores = resourceLocator.locate(req.getDomainId(), req.getPayload().getCriteria());
+        Collection<DomainValueHolder> domains = Collections.EMPTY_LIST;
+        stores.parallelStream().map((Store store) ->
+                store.execute(req.getPayload().getCriteria())).forEach((Collection<DomainValueHolder> ds) -> domains.addAll(ds));
+        //TODO: push back all.
+    }
 
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+    @Override
+    public Collection<Domain> getAll() {
+        return null;
     }
 
     //TODO:
     @Override
     public Domain getDomain(String domainId) {
-        return new DefaultDomain("user", "User Login Domain");
+        return new DefaultDomain(new DomainDesc());
         //return persistStore.get(domainId);
     }
 
