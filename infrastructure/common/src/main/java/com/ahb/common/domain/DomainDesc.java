@@ -5,12 +5,19 @@ import com.google.common.collect.Maps;
 import java.util.Map;
 
 /**
+ * Defines the persistence or cache reference state of a domain.
  * Created by aheroboy on 20/3/2018.
  */
 public class DomainDesc {
     Map<String, Integer> propertyNameToIndex = Maps.newHashMap();
     Map<String, ColumnDesc> propertyNameToColumnDesc = Maps.newHashMap();
     Map<Integer, String> indexToPropertyName = Maps.newHashMap();
+
+    public void add(ColumnDesc columnDesc) {
+        propertyNameToIndex.put(columnDesc.getColumnName(), columnDesc.getSeq());
+        propertyNameToColumnDesc.put(columnDesc.getColumnName(), columnDesc);
+        indexToPropertyName.put(columnDesc.getSeq(), columnDesc.getColumnName());
+    }
 
     public Map<String, Integer> getPropertyNameToIndex() {
         return propertyNameToIndex;
@@ -35,4 +42,5 @@ public class DomainDesc {
     public void setIndexToPropertyName(Map<Integer, String> indexToPropertyName) {
         this.indexToPropertyName = indexToPropertyName;
     }
+
 }

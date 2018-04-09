@@ -3,6 +3,7 @@ package com.ahb.common;
 import com.ahb.common.node.Node;
 import org.apache.commons.lang3.StringUtils;
 
+import java.net.URL;
 import java.util.Optional;
 
 /**
@@ -13,6 +14,8 @@ public class ConfImpl implements Conf {
     private int port;
     private Node node;
     private int webPort;
+    private URL fileSystemUrl;
+    private Boolean loadDefaultData;
 
     public ConfImpl() {
         this(Node.CENTOER_NODE_IP, Node.CENTOER_NODE_PORT);
@@ -26,9 +29,24 @@ public class ConfImpl implements Conf {
         this.ip = Optional.ofNullable(ip).orElse(Node.CENTOER_NODE_IP);
         this.port = port;
         String webPort = System.getProperty("WebPort");
-        if(StringUtils.isNotBlank(webPort)){
+        if (StringUtils.isNotBlank(webPort)) {
             this.webPort = Integer.valueOf(webPort);
         }
+
+        String fileUrl = System.getProperty("FileSysLocation");
+        if (StringUtils.isNotBlank(fileUrl)) {
+            try {
+                this.fileSystemUrl = new URL(fileUrl);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        String loadDefaultData = System.getProperty("LoadDefaultData");
+        if (StringUtils.isNoneBlank(loadDefaultData)) {
+            this.loadDefaultData = Boolean.valueOf(loadDefaultData);
+        }
+
     }
 
     @Override
@@ -76,5 +94,27 @@ public class ConfImpl implements Conf {
 
     public void setWebPort(int webPort) {
         this.webPort = webPort;
+    }
+
+    @Override
+    public URL getFileSystemUrl() {
+        return this.fileSystemUrl;
+    }
+
+    public void setFileSystemUrl(URL fileSystemUrl) {
+        this.fileSystemUrl = fileSystemUrl;
+    }
+
+    public Boolean getLoadDefaultData() {
+        return loadDefaultData;
+    }
+
+    @Override
+    public boolean loadDefaultData() {
+        return loadDefaultData;
+    }
+
+    public void setLoadDefaultData(Boolean loadDefaultData) {
+        this.loadDefaultData = loadDefaultData;
     }
 }

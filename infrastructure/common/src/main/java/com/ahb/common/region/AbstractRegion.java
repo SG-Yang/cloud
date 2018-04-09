@@ -1,12 +1,8 @@
 package com.ahb.common.region;
 
-import com.ahb.common.domain.DefaultDomain;
-import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainDesc;
-import com.ahb.common.domain.DomainValueHolder;
+import com.ahb.common.domain.*;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.store.Store;
-import com.ahb.common.store.StoreImpl;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 import com.google.common.collect.Maps;
@@ -25,6 +21,8 @@ public abstract class AbstractRegion implements Region<Domain> {
     private Domain regionDomain;
     private String regionPath;
     private String regionName;
+    private RegionId regionId;
+    private String desc;
     private RegionResourceLocatorImpl resourceLocator;
 
     @Override
@@ -35,13 +33,15 @@ public abstract class AbstractRegion implements Region<Domain> {
     public AbstractRegion(Domain regionDomain) {
         this.resourceLocator = new RegionResourceLocatorImpl();
         this.regionDomain = regionDomain;
-        this.regionPath = regionDomain.getDomainId();
+        this.regionPath = regionDomain.getId();
         this.regionName = regionPath;
+        this.regionId = new RegionId(regionName);
     }
 
     @Override
     public void install(Domain installable) {
-        domainDefinitions.put(installable.getDomainId(),installable);
+        domainDefinitions.put(installable.getId(),installable);
+        resourceLocator.mapDomain(installable);
         //TODO: Persist domain details descriptions.
     }
 
@@ -64,6 +64,11 @@ public abstract class AbstractRegion implements Region<Domain> {
     public Domain getDomain(String domainId) {
         return new DefaultDomain(new DomainDesc());
         //return persistStore.get(domainId);
+    }
+
+    @Override
+    public RegionId getId() {
+        return this.regionId;
     }
 
     @Override
@@ -102,5 +107,13 @@ public abstract class AbstractRegion implements Region<Domain> {
 
     public void setResourceLocator(RegionResourceLocatorImpl resourceLocator) {
         this.resourceLocator = resourceLocator;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
     }
 }

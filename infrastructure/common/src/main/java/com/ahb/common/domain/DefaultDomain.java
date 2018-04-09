@@ -9,4 +9,7 @@ public class DefaultDomain extends AbstractDomain {
     public DefaultDomain(DomainDesc domainDesc) {
         super(NAME, NAME, domainDesc);
     }
+    public DefaultDomain(String domainName,String domainId,DomainDesc domainDesc) {
+        super(domainName,domainId, domainDesc);
+    }
 }

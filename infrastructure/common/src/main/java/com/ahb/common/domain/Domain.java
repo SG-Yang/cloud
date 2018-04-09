@@ -11,8 +11,9 @@ import com.google.gson.Gson;
  */
 public interface Domain extends HotInstallable<Handler>,ViewAble {
     void handle(InternalReq req, InternalResp resp);
-
-    String getDomainId();
+    String getId();
+    String getDomainName();
     long getBusinessId();
     int getLocateVersion();
+    DomainDesc getDomainDesc();
 }

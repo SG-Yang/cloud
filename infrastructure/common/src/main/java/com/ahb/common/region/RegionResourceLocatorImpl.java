@@ -1,6 +1,7 @@
 package com.ahb.common.region;
 
 import com.ahb.common.HotInstallable;
+import com.ahb.common.domain.Domain;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.node.NodeId;
 import com.ahb.common.store.DistributeStore;
@@ -15,12 +16,18 @@ import java.util.Map;
  * Created by aheroboy on 21/3/2018.
  */
 public class RegionResourceLocatorImpl implements ResourceLocator, HotInstallable<CloudManager> {
-    private static final Map<NodeId, Store> nodes = Maps.newHashMap();
+
+    private Map<NodeId, Store> nodes = Maps.newHashMap();
     private Map<String, AVLTree<AVLTree.Location>> domainLocatorTree = Maps.newTreeMap();
 
     @Override
     public void install(CloudManager installable) {
         nodes.put(installable.getNodeInfo().getNodeId(), new DistributeStore(installable));
+    }
+
+    @Override
+    public void mapDomain(Domain domain) {
+        domainLocatorTree.put(domain.getDomainName(),new AVLTree<>());
     }
 
     @Override

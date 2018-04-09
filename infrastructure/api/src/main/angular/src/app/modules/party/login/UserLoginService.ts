@@ -10,6 +10,7 @@ import {Res} from "../../Res";
 export class UserLoginService extends HttpService<Req,Res> {
     constructor(http: Http) {
         super(http);
-        this.setComponent("ahb/pub/user");
+
+        this.setComponent("ahb/pub_region/user");
     }
 }

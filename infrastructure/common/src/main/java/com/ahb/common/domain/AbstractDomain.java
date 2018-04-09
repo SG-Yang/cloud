@@ -90,7 +90,7 @@ public class AbstractDomain implements Domain {
     }
 
     @Override
-    public String getDomainId() {
+    public String getId() {
         return domainId == null ? domainName : domainId;
     }
 

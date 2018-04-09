@@ -1,0 +1,7 @@
+regionName=pub_region
+regionName_seq = 1
+regionName_type=STRING
+
+regionPath=pub
+regionPath_seq=2
+regionPath_type=STRING

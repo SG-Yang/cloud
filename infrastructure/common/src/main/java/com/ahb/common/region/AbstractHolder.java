@@ -1,23 +1,20 @@
 package com.ahb.common.region;
 
 import com.ahb.common.domain.Domain;
-import com.ahb.common.region.AbstractRegion;
-import com.ahb.common.region.Holder;
-import com.ahb.common.region.Region;
 import com.ahb.common.web.Distributor;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-
-import java.util.Collection;
 
 /**
  * Created by aheroboy on 16/3/2018.
  */
 public abstract class AbstractHolder implements Distributor, Holder {
     protected Region region;
-    public AbstractHolder(Region<Domain> domainRegion){
+
+    public AbstractHolder(Region<Domain> domainRegion) {
         this.region = domainRegion;
     }
+
     @Override
     public Region get() {
         return null;

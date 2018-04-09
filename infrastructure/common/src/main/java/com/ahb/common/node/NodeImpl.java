@@ -67,8 +67,8 @@ public class NodeImpl implements Node {
             webEngine.start();
         }
         connectionManager.start();
-        regionManager.start();
         store.start();
+        regionManager.start();
         monitorManager.start();
     }
 
@@ -92,6 +92,7 @@ public class NodeImpl implements Node {
 
     private void initStore() {
         store = StoreImpl.StoreHolder.INSTANCE.store;
+        store.init();
     }
 
     private void initMonitors() {

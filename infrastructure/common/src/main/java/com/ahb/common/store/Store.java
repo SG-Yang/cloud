@@ -4,6 +4,7 @@ import com.ahb.common.LifeCycle;
 import com.ahb.common.domain.Domain;
 import com.ahb.common.domain.DomainValueHolder;
 import com.ahb.common.region.Criteria;
+import com.ahb.common.region.Region;
 
 import java.util.Collection;
 
@@ -13,6 +14,6 @@ import java.util.Collection;
 public interface Store extends LifeCycle{
     void save(DomainValueHolder domainValue);
     DomainValueHolder get(String domainId);
-    Collection<DomainValueHolder> getAll(String domainId);
+    Collection<Region<Domain>> getAll();
     Collection<DomainValueHolder> execute(Criteria criteria);
 }

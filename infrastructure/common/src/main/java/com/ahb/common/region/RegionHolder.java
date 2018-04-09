@@ -1,6 +1,5 @@
 package com.ahb.common.region;
 
-import com.ahb.common.domain.Domain;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
