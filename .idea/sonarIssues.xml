@@ -883,6 +883,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Layout.java">
           <value>
             <set />
@@ -893,12 +898,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/VerticalityMenu.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java">
           <value>
             <set />
           </value>

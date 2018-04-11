@@ -22,15 +22,24 @@ public abstract class AbstractHandler implements Handler {
     }
 
     @Override
-    public Context handle(Context res) {
+    public Context handle(Context context) {
         for (Handler handler : handlers) {
-            res = handler.handle(res);
-            if (!res.isDone()) {
+            context = handler.handle(context);
+            if (!context.isDone()) {
                 break;
             }
         }
-        return res;
+
+        doHandle(context);
+
+        if (context.isInitiator()) {
+           //TODO: Output results.
+        }
+
+        return context;
     }
+
+    public abstract Context doHandle(Context context);
 
     @Override
     public HandlerType getType() {

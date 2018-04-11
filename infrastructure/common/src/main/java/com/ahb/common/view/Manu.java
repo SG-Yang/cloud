@@ -5,7 +5,7 @@ import com.google.gson.JsonObject;
 /**
  * Created by aheroboy on 11/4/2018.
  */
-public class Manu implements View {
+public class Manu extends ViewImpl{
     @Override
     public JsonObject toViewObj() {
         return null;

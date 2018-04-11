@@ -13,7 +13,7 @@ public class DashboardHandler extends AbstractHandler {
     }
 
     @Override
-    public Context handle(Context res) {
+    public Context doHandle(Context res) {
 
         return res;
     }

@@ -1,8 +1,5 @@
 package com.ahb.common.handler;
 
-import com.ahb.common.domain.DomainView;
-import com.ahb.common.view.ViewPayload;
-
 /**
  * Created by aheroboy on 10/4/2018.
  */
@@ -17,8 +14,7 @@ public class ViewHandler extends AbstractHandler {
     }
 
     @Override
-    public Context handle(Context res) {
-        res.getInternalResp().setPayload(new ViewPayload(new DomainView(res.getDomain())));
+    public Context doHandle(Context res) {
         return res;
     }
 }

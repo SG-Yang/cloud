@@ -8,5 +8,8 @@ public class DomainHandlerChain extends AbstractHandler {
         super(handlerType);
     }
 
-
+    @Override
+    public Context doHandle(Context context) {
+        return context;
+    }
 }

@@ -9,4 +9,5 @@ import java.io.Serializable;
  */
 public interface View extends Serializable, Component{
     JsonObject toViewObj();
+    ViewId getViewId();
 }

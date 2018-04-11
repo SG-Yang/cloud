@@ -15,6 +15,7 @@ public class DomainContextImpl implements Context {
     private InternalReq req;
     private InternalResp resp;
     private ResourceLocator locator;
+    private int jumpStep = 0;
 
     public DomainContextImpl(Domain domain, InternalReq req, InternalResp resp) {
         this.domain = domain;
@@ -43,12 +44,12 @@ public class DomainContextImpl implements Context {
     }
 
     @Override
-    public JsonObject toViewObj() {
-        return null;
+    public Domain getDomain() {
+        return domain;
     }
 
     @Override
-    public Domain getDomain() {
-        return domain;
+    public boolean isInitiator() {
+        return jumpStep == 0;
     }
 }

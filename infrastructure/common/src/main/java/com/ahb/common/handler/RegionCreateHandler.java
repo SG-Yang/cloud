@@ -11,20 +11,10 @@ public class RegionCreateHandler extends AbstractHandler{
     }
 
     @Override
-    public Context handle(Context res) {
+    public Context doHandle(Context res) {
         RegionRoute regionRoute = res.getDomain().getRegion().getRegionRoute();
         res.getInternalReq().getPayload().getCriteria().getCriteriaData();
 
-        return null;
-    }
-
-    @Override
-    public Handler add(Handler handler) {
-        return null;
-    }
-
-    @Override
-    public HandlerType getType() {
-        return null;
+        return res;
     }
 }

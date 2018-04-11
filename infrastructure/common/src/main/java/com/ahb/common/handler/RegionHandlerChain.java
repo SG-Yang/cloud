@@ -7,4 +7,9 @@ public class RegionHandlerChain extends AbstractHandler {
     public RegionHandlerChain(HandlerType handlerType) {
         super(handlerType);
     }
+
+    @Override
+    public Context doHandle(Context context) {
+        return context;
+    }
 }

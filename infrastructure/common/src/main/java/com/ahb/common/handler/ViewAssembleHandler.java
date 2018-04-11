@@ -10,4 +10,9 @@ public class ViewAssembleHandler extends AbstractHandler {
     public ViewAssembleHandler(HandlerType handlerType) {
         super(handlerType);
     }
+
+    @Override
+    public Context doHandle(Context context) {
+        return context;
+    }
 }
