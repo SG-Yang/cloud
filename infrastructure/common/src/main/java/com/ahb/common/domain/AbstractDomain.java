@@ -1,6 +1,5 @@
 package com.ahb.common.domain;
 
-import com.ahb.common.handler.DomainHandlerChain;
 import com.ahb.common.handler.DomainContextImpl;
 import com.ahb.common.handler.Handler;
 import com.ahb.common.handler.HandlerType;
@@ -23,26 +22,40 @@ public class AbstractDomain implements Domain {
 
     private String domainName;
     private String domainId;
-    private DomainDesc domainDesc;
-    private Map<HandlerType, DomainHandlerChain> chains = Maps.newHashMap();
+    public static final DomainDesc domainDesc = new DomainDesc();
+    private Map<HandlerType, Handler> chains = Maps.newHashMap();
     private Region region;
+    static {
+        domainDesc.add(new ColumnDesc(1,ColumnType.LONG,Domain.SEQ));
+        domainDesc.add(new ColumnDesc(2,ColumnType.STRING,Domain.NAME));
+        domainDesc.add(new ColumnDesc(3,ColumnType.STRING,Domain.BUSINESS_ID));
+        domainDesc.add(new ColumnDesc(4,ColumnType.LONG,Domain.ID));
+    }
 
-    public AbstractDomain(String name, String id, DomainDesc domainDesc) {
+    public AbstractDomain(String name, String id) {
         this.domainId = id;
         this.domainName = name;
-        this.domainDesc = domainDesc;
+    }
+
+    @Override
+    public Region<Domain> getRegion() {
+        return this.region;
     }
 
     //TODO: handle output.
     @Override
     public void handle(InternalReq req, InternalResp resp, Region region, ResourceLocator locator) {
-        DomainHandlerChain handler = chains.get(req.getType());
+        Handler handler = chains.get(req.getType());
         resp.setPayload(new ViewPayload(handler.handle(new DomainContextImpl(this, req, resp))));
     }
 
     @Override
     public void install(Handler handler) {
-        chains.get(handler.getType()).chainUp(handler);
+        if (chains.containsKey(handler.getType())) {
+            chains.get(handler.getType()).add(handler);
+        } else {
+            chains.put(handler.getType(), handler);
+        }
     }
 
     @Override
@@ -74,9 +87,5 @@ public class AbstractDomain implements Domain {
 
     public DomainDesc getDomainDesc() {
         return domainDesc;
-    }
-
-    public void setDomainDesc(DomainDesc domainDesc) {
-        this.domainDesc = domainDesc;
     }
 }

@@ -263,6 +263,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DefaultDomain.java">
           <value>
             <set />
@@ -298,6 +303,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/HandlerManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/HandlerType.java">
           <value>
             <set />
@@ -308,7 +318,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionCreator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionCreatorDomain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionDomain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/SystemBuildDomain.java">
           <value>
             <set />
           </value>
@@ -358,6 +383,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java">
           <value>
             <set />
@@ -369,6 +399,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerResImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Handler.java">
           <value>
             <set />
           </value>
@@ -388,6 +423,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java">
           <value>
             <set />
@@ -399,6 +439,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/OpIns.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java">
           <value>
             <set />
           </value>
@@ -613,7 +658,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DefaultRegion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DistributeStore.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainCreator.java">
           <value>
             <set />
           </value>
@@ -654,6 +709,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/Region.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionCreator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionCreatorDomain.java">
           <value>
             <set />
           </value>
@@ -718,6 +783,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemBuildRegion.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/store/DBStore.java">
           <value>
             <set />
@@ -739,6 +809,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/DashboardView.java">
           <value>
             <set />
           </value>
@@ -904,6 +979,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/WebEngineImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/resources/TODOs">
           <value>
             <set />
           </value>

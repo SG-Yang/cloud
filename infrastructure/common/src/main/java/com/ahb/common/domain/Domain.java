@@ -21,4 +21,5 @@ public interface Domain extends HotInstallable<Handler>{
     long getBusinessId();
     int getLocateVersion();
     DomainDesc getDomainDesc();
+    Region<Domain> getRegion();
 }

@@ -15,12 +15,26 @@ public class DomainContextImpl implements Context {
     private InternalReq req;
     private InternalResp resp;
     private ResourceLocator locator;
-    private Region region;
 
     public DomainContextImpl(Domain domain, InternalReq req, InternalResp resp) {
         this.domain = domain;
         this.req = req;
         this.resp = resp;
+    }
+
+    @Override
+    public ResourceLocator getLocator() {
+        return this.locator;
+    }
+
+    @Override
+    public InternalResp getInternalResp() {
+        return this.resp;
+    }
+
+    @Override
+    public InternalReq getInternalReq() {
+        return this.req;
     }
 
     @Override
@@ -31,5 +45,10 @@ public class DomainContextImpl implements Context {
     @Override
     public JsonObject toViewObj() {
         return null;
+    }
+
+    @Override
+    public Domain getDomain() {
+        return domain;
     }
 }

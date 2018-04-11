@@ -11,6 +11,10 @@ public abstract class AbstractHandler implements Handler {
     protected List<Handler> handlers = Lists.newArrayList();
     private HandlerType type;
 
+    AbstractHandler(HandlerType handlerType) {
+        this.type = handlerType;
+    }
+
     @Override
     public Handler add(Handler handler) {
         this.handlers.add(handler);

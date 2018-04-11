@@ -33,5 +33,6 @@ public interface Region<T> extends HotInstallable<T>, Distributor {
 
     RegionId getId();
     Domain getRegionDomain();
+    RegionManager getRegionManager();
 
 }

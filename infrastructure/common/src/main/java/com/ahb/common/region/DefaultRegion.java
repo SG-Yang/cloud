@@ -1,10 +1,9 @@
-package com.ahb.common.domain;
+package com.ahb.common.region;
 
-import com.ahb.common.region.AbstractRegion;
-import com.ahb.common.region.RegionDomainAnnotation;
+import com.ahb.common.domain.Domain;
+import com.ahb.common.domain.DomainValueHolder;
 
 import java.util.Collection;
-import java.util.Properties;
 
 /**
  * Created by aheroboy on 20/3/2018.

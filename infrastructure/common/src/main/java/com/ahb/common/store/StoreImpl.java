@@ -4,6 +4,7 @@ import com.ahb.common.Conf;
 import com.ahb.common.ConfImpl;
 import com.ahb.common.domain.*;
 import com.ahb.common.region.Criteria;
+import com.ahb.common.region.DefaultRegion;
 import com.ahb.common.region.Region;
 import com.ahb.common.region.RegionId;
 import com.google.common.collect.Lists;

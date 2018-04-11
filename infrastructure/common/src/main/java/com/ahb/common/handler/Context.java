@@ -1,5 +1,9 @@
 package com.ahb.common.handler;
 
+import com.ahb.common.domain.Domain;
+import com.ahb.common.region.ResourceLocator;
+import com.ahb.common.web.InternalReq;
+import com.ahb.common.web.InternalResp;
 import com.ahb.common.web.View;
 
 /**
@@ -7,4 +11,8 @@ import com.ahb.common.web.View;
  */
 public interface Context extends View {
     boolean isDone();
+    Domain getDomain();
+    InternalResp getInternalResp();
+    InternalReq getInternalReq();
+    ResourceLocator getLocator();
 }

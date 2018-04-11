@@ -1,7 +1,6 @@
 package com.ahb.common.region;
 
 import com.ahb.common.domain.DefaultDomain;
-import com.ahb.common.domain.DefaultRegion;
 import com.ahb.common.domain.Domain;
 import com.ahb.common.domain.DomainDesc;
 import com.ahb.common.node.CloudManager;
@@ -23,7 +22,7 @@ import java.util.Map;
  */
 public class RegionManagerImpl implements RegionManager {
     private static Map<String, Holder> HOLDER_MAPPINGS = Maps.newHashMap();
-    private UnReachableHolder unReachableHolder = new UnReachableHolder(new DefaultRegion(new DefaultDomain(new DomainDesc())), this);
+    private UnReachableHolder unReachableHolder = new UnReachableHolder(new DefaultRegion(new DefaultDomain()), this);
     private RegionResourceLocatorImpl globalResourceLocator;
 
     public RegionManagerImpl() {
@@ -50,15 +49,18 @@ public class RegionManagerImpl implements RegionManager {
 
     @Override
     public void init() {
+        initDefaultRegion();
         Collection<Region<Domain>> allRegions = StoreImpl.StoreHolder.INSTANCE.store.getAll();
         for (Region<Domain> region : allRegions) {
             initRegion(region);
         }
     }
 
-    void initDefaultRegion(){
-       Region<Domain> regionCreator = new RegionCreator();
+    void initDefaultRegion() {
+        Region<Domain> regionCreator = new SystemBuildRegion();
+        initRegion(regionCreator);
     }
+
     void initRegion(Region region) {
         HOLDER_MAPPINGS.put(region.getPath(), new RegionHolder(region, this));
     }

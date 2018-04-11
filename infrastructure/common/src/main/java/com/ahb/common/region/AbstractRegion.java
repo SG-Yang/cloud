@@ -8,6 +8,8 @@ import com.ahb.common.handler.*;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
+import com.ahb.common.web.ViewImpl;
+import com.ahb.common.web.ViewPayload;
 import com.google.common.collect.Maps;
 
 import java.util.Collection;
@@ -29,11 +31,13 @@ public abstract class AbstractRegion implements Region<Domain> {
     private RegionResourceLocatorImpl resourceLocator;
     private RegionManager regionManager;
 
+    /**
     static {
-        RegionHandlerChain createChain = new RegionHandlerChain();
+        RegionHandlerChain createChain = new RegionHandlerChain(HandlerType.CREATE_REGION);
         createChain.add(new CreateRegionHandler());
-        handlers.put(HandlerType.CREATE_REGION,createChain);
+        handlers.put(createChain.getType(),createChain);
     }
+     **/
 
     @Override
     public String getPath() {
@@ -58,6 +62,12 @@ public abstract class AbstractRegion implements Region<Domain> {
     @Override
     public void distribute(InternalReq req, InternalResp resp) {
         Domain domain = domainDefinitions.get(req.getDomainId());
+        if(domain == null){
+            resp.setPayload(new ViewPayload(new ViewImpl()));
+            resp.getPayload().setStatus(Boolean.TRUE);
+            resp.output();
+            return;
+        }
         domain.handle(req,resp,this,resourceLocator);
     }
 
@@ -69,13 +79,17 @@ public abstract class AbstractRegion implements Region<Domain> {
     //TODO:
     @Override
     public Domain getDomain(String domainId) {
-        return new DefaultDomain(new DomainDesc());
-        //return persistStore.get(domainId);
+        return new DefaultDomain();
     }
 
     @Override
     public void setRegionManager(RegionManager regionManager) {
         this.regionManager = regionManager;
+    }
+
+    @Override
+    public RegionManager getRegionManager() {
+        return this.regionManager;
     }
 
     @Override
