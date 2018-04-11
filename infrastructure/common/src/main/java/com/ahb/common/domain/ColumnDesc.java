@@ -1,5 +1,7 @@
 package com.ahb.common.domain;
 
+import com.ahb.common.handler.Handler;
+
 /**
  * Created by aheroboy on 22/3/2018.
  */
@@ -8,13 +10,11 @@ public class ColumnDesc {
     private Handler handlers[];
     private ColumnType columnType;
     private String columnName;
-    private Object columnValue;
     private int seq;
 
-    public ColumnDesc(int seq, ColumnType columnType, String columnName, Handler[] handlers, Object columnValue) {
+    public ColumnDesc(int seq, ColumnType columnType, String columnName, Handler[] handlers) {
         this(seq, columnType, columnName);
         this.handlers = handlers;
-        this.columnValue = columnValue;
     }
 
     public ColumnDesc(int seq, ColumnType columnType, String columnName) {
@@ -45,14 +45,6 @@ public class ColumnDesc {
 
     public void setSeq(int seq) {
         this.seq = seq;
-    }
-
-    public Object getColumnValue() {
-        return columnValue;
-    }
-
-    public void setColumnValue(Object columnValue) {
-        this.columnValue = columnValue;
     }
 
     public String getColumnName() {

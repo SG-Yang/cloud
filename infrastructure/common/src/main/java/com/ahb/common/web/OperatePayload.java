@@ -1,6 +1,6 @@
 package com.ahb.common.web;
 
-import com.ahb.common.domain.HandlerType;
+import com.ahb.common.handler.HandlerType;
 import com.ahb.common.region.CriteriaImpl;
 import org.codehaus.jackson.annotate.JsonProperty;
 
@@ -12,7 +12,6 @@ public class OperatePayload {
     private HandlerType operateType;
     @JsonProperty("criteria")
     private CriteriaImpl criteria = new CriteriaImpl();
-
     public HandlerType getOperateType() {
         return operateType;
     }

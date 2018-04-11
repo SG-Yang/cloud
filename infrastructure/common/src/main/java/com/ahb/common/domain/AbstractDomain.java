@@ -1,8 +1,15 @@
 package com.ahb.common.domain;
 
-import com.ahb.common.web.*;
+import com.ahb.common.handler.DomainHandlerChain;
+import com.ahb.common.handler.DomainContextImpl;
+import com.ahb.common.handler.Handler;
+import com.ahb.common.handler.HandlerType;
+import com.ahb.common.region.Region;
+import com.ahb.common.region.ResourceLocator;
+import com.ahb.common.web.InternalReq;
+import com.ahb.common.web.InternalResp;
+import com.ahb.common.web.ViewPayload;
 import com.google.common.collect.Maps;
-import com.google.gson.JsonObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,59 +19,30 @@ import java.util.Map;
  * Created by aheroboy on 16/3/2018.
  */
 public class AbstractDomain implements Domain {
-    private static final Map<HandlerType, Handler> handlers = Maps.newHashMap();
     protected static final Logger LOGGER = LoggerFactory.getLogger(AbstractDomain.class);
-
-    static {
-        handlers.put(HandlerType.LOGIN, new Handler() {
-            @Override
-            public ViewPayload handle(Domain domain, InternalReq req) {
-                LOGGER.info("handle request:" + req);
-                ViewPayload payload = domain.toView();
-                payload.setStatus(Boolean.TRUE);
-                return payload;
-            }
-
-            @Override
-            public HandlerType getType() {
-                return HandlerType.LOGIN;
-            }
-        });
-    }
 
     private String domainName;
     private String domainId;
-    private View view;
     private DomainDesc domainDesc;
+    private Map<HandlerType, DomainHandlerChain> chains = Maps.newHashMap();
+    private Region region;
 
     public AbstractDomain(String name, String id, DomainDesc domainDesc) {
         this.domainId = id;
         this.domainName = name;
         this.domainDesc = domainDesc;
-        this.view = new ViewImpl();
     }
 
     //TODO: handle output.
     @Override
-    public void handle(InternalReq req, InternalResp resp) {
-        Handler handler = handlers.get(req.getType());
-        resp.setPayload(handler.handle(this, req));
+    public void handle(InternalReq req, InternalResp resp, Region region, ResourceLocator locator) {
+        DomainHandlerChain handler = chains.get(req.getType());
+        resp.setPayload(new ViewPayload(handler.handle(new DomainContextImpl(this, req, resp))));
     }
 
     @Override
     public void install(Handler handler) {
-        handlers.put(handler.getType(), handler);
-    }
-
-    @Override
-    public ViewPayload toView() {
-        JsonObject data = new JsonObject();
-        data.addProperty("simple", "Simple1");
-        data.addProperty("simple", "Simple1");
-        data.addProperty("simple", "Simple1");
-        JsonObject viewObj = view.toViewObj();
-        ViewPayload payload = new ViewPayload(viewObj, data);
-        return payload;
+        chains.get(handler.getType()).chainUp(handler);
     }
 
     @Override
@@ -75,10 +53,6 @@ public class AbstractDomain implements Domain {
     @Override
     public int getLocateVersion() {
         return 0;
-    }
-
-    public static Map<HandlerType, Handler> getHandlers() {
-        return handlers;
     }
 
     public String getDomainName() {
@@ -96,14 +70,6 @@ public class AbstractDomain implements Domain {
 
     public void setDomainId(String domainId) {
         this.domainId = domainId;
-    }
-
-    public View getView() {
-        return view;
-    }
-
-    public void setView(View view) {
-        this.view = view;
     }
 
     public DomainDesc getDomainDesc() {

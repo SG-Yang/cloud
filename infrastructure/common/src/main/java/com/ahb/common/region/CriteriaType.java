@@ -5,5 +5,8 @@ package com.ahb.common.region;
  */
 public enum CriteriaType {
     ID,
-    ALL
+    JOIN_DOMAIN,
+    JOIN_REGION_DOMAIN,
+    ALL,
+    All_REGION
 }

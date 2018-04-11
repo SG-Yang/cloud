@@ -1,5 +1,8 @@
 package com.ahb.common.web;
 
+import com.ahb.common.handler.CriteriaParser;
+import com.ahb.common.handler.OpIns;
+import com.ahb.common.handler.RegionHandlerChain;
 import com.ahb.common.region.Criteria;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
@@ -12,6 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 public class InternalReqBuilder {
     private HttpServletRequest request;
     private static final String PREFIX = "/";
+    private static final CriteriaParser parser = new CriteriaParser();
 
     public static final InternalReqBuilder newInstance() {
         return new InternalReqBuilder();
@@ -26,7 +30,11 @@ public class InternalReqBuilder {
         try {
             Gson gson = new Gson();
             OperatePayload payload = gson.fromJson(request.getReader(), OperatePayload.class);
-            InternalReq req = new InternalReq(payload);
+            OpIns opIns = parser.parse(payload.getCriteria());
+            if(opIns == null){
+                //TODO:
+            }
+            InternalReq req = new InternalReq(payload,opIns);
             String contextPath = request.getPathInfo();
             if (StringUtils.startsWith(contextPath, PREFIX)) {
                 String regionUrl = StringUtils.replaceFirst(contextPath, PREFIX, "");

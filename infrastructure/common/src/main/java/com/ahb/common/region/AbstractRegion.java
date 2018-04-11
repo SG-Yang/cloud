@@ -1,14 +1,16 @@
 package com.ahb.common.region;
 
-import com.ahb.common.domain.*;
+import com.ahb.common.domain.DefaultDomain;
+import com.ahb.common.domain.Domain;
+import com.ahb.common.domain.DomainDesc;
+import com.ahb.common.handler.HandlerType;
+import com.ahb.common.handler.*;
 import com.ahb.common.node.CloudManager;
-import com.ahb.common.store.Store;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 import com.google.common.collect.Maps;
 
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Map;
 
 /**
@@ -17,13 +19,21 @@ import java.util.Map;
  */
 public abstract class AbstractRegion implements Region<Domain> {
 
-    protected Map<String,Domain> domainDefinitions = Maps.newHashMap();
+    protected Map<String, Domain> domainDefinitions = Maps.newHashMap();
+    private static Map<HandlerType, RegionHandlerChain> handlers = Maps.newHashMap();
     private Domain regionDomain;
     private String regionPath;
     private String regionName;
     private RegionId regionId;
     private String desc;
     private RegionResourceLocatorImpl resourceLocator;
+    private RegionManager regionManager;
+
+    static {
+        RegionHandlerChain createChain = new RegionHandlerChain();
+        createChain.add(new CreateRegionHandler());
+        handlers.put(HandlerType.CREATE_REGION,createChain);
+    }
 
     @Override
     public String getPath() {
@@ -40,18 +50,15 @@ public abstract class AbstractRegion implements Region<Domain> {
 
     @Override
     public void install(Domain installable) {
-        domainDefinitions.put(installable.getId(),installable);
+        domainDefinitions.put(installable.getId(), installable);
         resourceLocator.mapDomain(installable);
         //TODO: Persist domain details descriptions.
     }
 
     @Override
     public void distribute(InternalReq req, InternalResp resp) {
-        Collection<Store> stores = resourceLocator.locate(req.getDomainId(), req.getPayload().getCriteria());
-        Collection<DomainValueHolder> domains = Collections.EMPTY_LIST;
-        stores.parallelStream().map((Store store) ->
-                store.execute(req.getPayload().getCriteria())).forEach((Collection<DomainValueHolder> ds) -> domains.addAll(ds));
-        //TODO: push back all.
+        Domain domain = domainDefinitions.get(req.getDomainId());
+        domain.handle(req,resp,this,resourceLocator);
     }
 
     @Override
@@ -64,6 +71,11 @@ public abstract class AbstractRegion implements Region<Domain> {
     public Domain getDomain(String domainId) {
         return new DefaultDomain(new DomainDesc());
         //return persistStore.get(domainId);
+    }
+
+    @Override
+    public void setRegionManager(RegionManager regionManager) {
+        this.regionManager = regionManager;
     }
 
     @Override

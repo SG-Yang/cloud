@@ -7,7 +7,7 @@ public enum ColumnType {
     STRING("string"),
     DOMAIN("int"),
     DOMAIN_MAP("map"),
-    INT("int");
+    LONG("long");
     String type;
 
     ColumnType(String type) {

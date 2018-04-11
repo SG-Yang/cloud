@@ -1,17 +1,21 @@
 package com.ahb.common.region;
 
+import com.ahb.common.domain.DefaultDomain;
+import com.ahb.common.domain.DefaultRegion;
 import com.ahb.common.domain.Domain;
 import com.ahb.common.domain.DomainDesc;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.store.StoreImpl;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
+import com.ahb.common.web.UnReachableHolder;
+import com.ahb.common.web.ViewPayload;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
-
-import static com.ahb.common.web.UnReachableHolder.UNREACHABLE_DISTRIBUTOR;
 
 /**
  * Created by aheroboy on 17/3/2018.
@@ -19,8 +23,8 @@ import static com.ahb.common.web.UnReachableHolder.UNREACHABLE_DISTRIBUTOR;
  */
 public class RegionManagerImpl implements RegionManager {
     private static Map<String, Holder> HOLDER_MAPPINGS = Maps.newHashMap();
+    private UnReachableHolder unReachableHolder = new UnReachableHolder(new DefaultRegion(new DefaultDomain(new DomainDesc())), this);
     private RegionResourceLocatorImpl globalResourceLocator;
-    public static final String GLOBAL_REGION = "GLOBAL_REGION";
 
     public RegionManagerImpl() {
         this.globalResourceLocator = new RegionResourceLocatorImpl();
@@ -28,9 +32,18 @@ public class RegionManagerImpl implements RegionManager {
 
     @Override
     public void distribute(InternalReq req, InternalResp resp) {
+        if (CriteriaType.All_REGION.equals(req.getPayload().getCriteria().getType())) {
+            List<Region> regions = Lists.newArrayList();
+            HOLDER_MAPPINGS.values().stream().forEach((Holder hold) -> {
+                regions.add(hold.get());
+            });
+
+            resp.setPayload(new ViewPayload(new RegionView(regions)));
+        }
+
         Holder region = HOLDER_MAPPINGS.get(req.getRegionUrl());
         if (region == null) {
-            region = UNREACHABLE_DISTRIBUTOR;
+            region = unReachableHolder;
         }
         region.distribute(req, resp);
     }
@@ -43,8 +56,11 @@ public class RegionManagerImpl implements RegionManager {
         }
     }
 
+    void initDefaultRegion(){
+       Region<Domain> regionCreator = new RegionCreator();
+    }
     void initRegion(Region region) {
-        HOLDER_MAPPINGS.put(region.getPath(), new RegionHolder(region));
+        HOLDER_MAPPINGS.put(region.getPath(), new RegionHolder(region, this));
     }
 
     @Override

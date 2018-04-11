@@ -248,6 +248,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ColumnDesc.java">
           <value>
             <set />
@@ -274,6 +279,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainValueHolder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainValueView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainView.java">
           <value>
             <set />
           </value>
@@ -319,6 +334,86 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/exchange/gossip/ThriftExchanger.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/CreateRegionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/CriteriaParser.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerChain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerResImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerChain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerRes.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerResImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/MutiFromHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/OpIns.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerChain.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerResImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java">
           <value>
             <set />
           </value>
@@ -594,6 +689,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionView.java">
           <value>
             <set />
           </value>

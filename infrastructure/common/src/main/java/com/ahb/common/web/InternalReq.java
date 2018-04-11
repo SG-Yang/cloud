@@ -1,6 +1,7 @@
 package com.ahb.common.web;
 
-import com.ahb.common.domain.HandlerType;
+import com.ahb.common.handler.HandlerType;
+import com.ahb.common.handler.OpIns;
 
 /**
  * Created by aheroboy on 16/3/2018.
@@ -10,10 +11,12 @@ public class InternalReq {
     private String targetUrl;
     private CloudSession session;
     private HandlerType type;
+    private OpIns opIns;
 
-    public InternalReq(OperatePayload payload) {
+    public InternalReq(OperatePayload payload,OpIns opIns) {
         this.payload = payload;
         this.type = payload.getOperateType();
+        this.opIns = opIns;
     }
 
     public CloudSession getSession() {
@@ -63,6 +66,14 @@ public class InternalReq {
 
     public void setPayload(OperatePayload payload) {
         this.payload = payload;
+    }
+
+    public OpIns getOpIns() {
+        return opIns;
+    }
+
+    public void setOpIns(OpIns opIns) {
+        this.opIns = opIns;
     }
 
     @Override

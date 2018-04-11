@@ -29,6 +29,7 @@ public interface Region<T> extends HotInstallable<T>, Distributor {
     String getRegionName();
 
     void register(CloudManager cloudManager);
+    void setRegionManager(RegionManager regionManager);
 
     RegionId getId();
     Domain getRegionDomain();

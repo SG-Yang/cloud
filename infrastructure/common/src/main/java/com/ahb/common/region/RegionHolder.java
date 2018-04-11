@@ -10,21 +10,20 @@ import org.apache.commons.lang3.StringUtils;
  * //In charge of handling any operations to this region.
  */
 public class RegionHolder extends AbstractHolder {
-
-    public RegionHolder(Region region) {
-        super(region);
+    public RegionHolder(Region region, RegionManager regionManager) {
+        super(region, regionManager);
     }
 
     public void doDistribute(InternalReq req, InternalResp resp) {
         String domainId = req.getDomainId();
         if (StringUtils.isNotBlank(domainId)) {
-            region.distribute(req,resp);
+            region.distribute(req, resp);
             /**
-            Domain domain = region.getDomain(domainId);
-            if (domain != null) {
-                domain.handle(req, resp);
-                resp.output();
-            }
+             Domain domain = region.getDomain(domainId);
+             if (domain != null) {
+             domain.handle(req, resp);
+             resp.output();
+             }
              **/
         }
     }
