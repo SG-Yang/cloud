@@ -1,4 +1,4 @@
-package com.ahb.common.web;
+package com.ahb.common.view;
 
 /**
  * Created by aheroboy on 16/3/2018.

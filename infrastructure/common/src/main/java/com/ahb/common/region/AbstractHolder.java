@@ -9,12 +9,12 @@ import com.ahb.common.web.InternalResp;
  * Created by aheroboy on 16/3/2018.
  */
 public abstract class AbstractHolder implements Distributor, Holder {
-    private RegionManager regionManager;
+    private RegionRoute regionRoute;
     protected Region region;
 
-    public AbstractHolder(Region<Domain> domainRegion,RegionManager regionManager) {
+    public AbstractHolder(Region<Domain> domainRegion,RegionRoute regionRoute) {
         this.region = domainRegion;
-        this.regionManager = regionManager;
+        this.regionRoute = regionRoute;
     }
 
     @Override

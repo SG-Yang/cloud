@@ -4,7 +4,7 @@ import com.ahb.common.domain.Domain;
 import com.ahb.common.region.ResourceLocator;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-import com.ahb.common.web.View;
+import com.ahb.common.view.View;
 
 /**
  * Created by aheroboy on 10/4/2018.

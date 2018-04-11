@@ -7,7 +7,7 @@ import com.ahb.common.region.Region;
 import com.ahb.common.region.ResourceLocator;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-import com.ahb.common.web.ViewPayload;
+import com.ahb.common.view.ViewPayload;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

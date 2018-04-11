@@ -1,7 +1,7 @@
 package com.ahb.common.handler;
 
 import com.ahb.common.domain.DomainView;
-import com.ahb.common.web.ViewPayload;
+import com.ahb.common.view.ViewPayload;
 
 /**
  * Created by aheroboy on 10/4/2018.
@@ -11,6 +11,7 @@ public class ViewHandler extends AbstractHandler {
     public ViewHandler() {
         this(HandlerType.VIEW);
     }
+
     public ViewHandler(HandlerType handlerType) {
         super(handlerType);
     }

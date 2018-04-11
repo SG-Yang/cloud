@@ -2,13 +2,12 @@ package com.ahb.common.region;
 
 import com.ahb.common.domain.DefaultDomain;
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainDesc;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.store.StoreImpl;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 import com.ahb.common.web.UnReachableHolder;
-import com.ahb.common.web.ViewPayload;
+import com.ahb.common.view.ViewPayload;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
@@ -20,12 +19,12 @@ import java.util.Map;
  * Created by aheroboy on 17/3/2018.
  * Focus on region management and path routing.
  */
-public class RegionManagerImpl implements RegionManager {
+public class RegionRouteImpl implements RegionRoute {
     private static Map<String, Holder> HOLDER_MAPPINGS = Maps.newHashMap();
     private UnReachableHolder unReachableHolder = new UnReachableHolder(new DefaultRegion(new DefaultDomain()), this);
     private RegionResourceLocatorImpl globalResourceLocator;
 
-    public RegionManagerImpl() {
+    public RegionRouteImpl() {
         this.globalResourceLocator = new RegionResourceLocatorImpl();
     }
 
@@ -57,8 +56,7 @@ public class RegionManagerImpl implements RegionManager {
     }
 
     void initDefaultRegion() {
-        Region<Domain> regionCreator = new SystemBuildRegion();
-        initRegion(regionCreator);
+        initRegion(new SystemAdmin());
     }
 
     void initRegion(Region region) {
@@ -103,10 +101,5 @@ public class RegionManagerImpl implements RegionManager {
     @Override
     public void inject(CloudManager cloudManager) {
         globalResourceLocator.install(cloudManager);
-    }
-
-    //For purpose of a region definition to be or from persisted.
-    public DomainDesc getRegionDomainDesc() {
-        return null;
     }
 }

@@ -8,7 +8,6 @@ import java.util.Collection;
 /**
  * Created by aheroboy on 20/3/2018.
  */
-@RegionDomainAnnotation
 public class DefaultRegion extends AbstractRegion {
 
     public DefaultRegion(Domain regionDomain) {

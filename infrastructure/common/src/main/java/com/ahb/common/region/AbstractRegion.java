@@ -2,14 +2,13 @@ package com.ahb.common.region;
 
 import com.ahb.common.domain.DefaultDomain;
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainDesc;
 import com.ahb.common.handler.HandlerType;
 import com.ahb.common.handler.*;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-import com.ahb.common.web.ViewImpl;
-import com.ahb.common.web.ViewPayload;
+import com.ahb.common.view.ViewImpl;
+import com.ahb.common.view.ViewPayload;
 import com.google.common.collect.Maps;
 
 import java.util.Collection;
@@ -29,7 +28,7 @@ public abstract class AbstractRegion implements Region<Domain> {
     private RegionId regionId;
     private String desc;
     private RegionResourceLocatorImpl resourceLocator;
-    private RegionManager regionManager;
+    private RegionRoute regionRoute;
 
     /**
     static {
@@ -83,13 +82,13 @@ public abstract class AbstractRegion implements Region<Domain> {
     }
 
     @Override
-    public void setRegionManager(RegionManager regionManager) {
-        this.regionManager = regionManager;
+    public void setRegionRoute(RegionRoute regionRoute) {
+        this.regionRoute = regionRoute;
     }
 
     @Override
-    public RegionManager getRegionManager() {
-        return this.regionManager;
+    public RegionRoute getRegionRoute() {
+        return this.regionRoute;
     }
 
     @Override

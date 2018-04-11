@@ -4,14 +4,14 @@ import com.ahb.common.domain.Domain;
 import com.ahb.common.node.CloudManager;
 import com.ahb.common.region.AbstractHolder;
 import com.ahb.common.region.Region;
-import com.ahb.common.region.RegionManager;
+import com.ahb.common.region.RegionRoute;
 
 /**
  * Created by aheroboy on 16/3/2018.
  */
 public class UnReachableHolder extends AbstractHolder {
-    public UnReachableHolder(Region<Domain> domainRegion, RegionManager regionManager) {
-        super(domainRegion, regionManager);
+    public UnReachableHolder(Region<Domain> domainRegion, RegionRoute regionRoute) {
+        super(domainRegion, regionRoute);
     }
 
     @Override

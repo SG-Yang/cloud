@@ -1,6 +1,6 @@
 package com.ahb.common.region;
 
-import com.ahb.common.web.ViewImpl;
+import com.ahb.common.view.ViewImpl;
 import com.google.common.collect.Lists;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.ahb.common.web;
+package com.ahb.common.view;
 
 import com.google.gson.JsonObject;
 

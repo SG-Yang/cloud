@@ -3,8 +3,8 @@ package com.ahb.common.node;
 import com.ahb.common.Conf;
 import com.ahb.common.ConfImpl;
 import com.ahb.common.monitor.MonitorManager;
-import com.ahb.common.region.RegionManager;
-import com.ahb.common.region.RegionManagerImpl;
+import com.ahb.common.region.RegionRoute;
+import com.ahb.common.region.RegionRouteImpl;
 import com.ahb.common.store.Store;
 import com.ahb.common.store.StoreImpl;
 import com.ahb.common.web.InternalReq;
@@ -26,7 +26,7 @@ public class NodeImpl implements Node {
     private AtomicReference<RunState> state = new AtomicReference<>();
     private Conf conf;
     private NodeInfo nodeInfo;
-    private RegionManager regionManager;
+    private RegionRoute regionRoute;
     private MonitorManager monitorManager;
     private Store store;
     private volatile boolean isAPIServer = Boolean.FALSE;
@@ -56,7 +56,7 @@ public class NodeImpl implements Node {
 
     @Override
     public void distribute(InternalReq req, InternalResp resp) {
-        regionManager.distribute(req, resp);
+        regionRoute.distribute(req, resp);
     }
 
     @Override
@@ -68,7 +68,7 @@ public class NodeImpl implements Node {
         }
         connectionManager.start();
         store.start();
-        regionManager.start();
+        regionRoute.start();
         monitorManager.start();
     }
 
@@ -111,8 +111,8 @@ public class NodeImpl implements Node {
     }
 
     private void initRegionManger() {
-        regionManager = new RegionManagerImpl();
-        regionManager.init();
+        regionRoute = new RegionRouteImpl();
+        regionRoute.init();
     }
 
     @Override
@@ -128,7 +128,7 @@ public class NodeImpl implements Node {
     @Override
     public void injectResource(CloudManager cloudManager) {
         if(isAPIServer){
-            regionManager.inject(cloudManager);
+            regionRoute.inject(cloudManager);
         }
     }
 

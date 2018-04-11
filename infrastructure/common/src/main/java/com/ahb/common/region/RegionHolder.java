@@ -10,8 +10,8 @@ import org.apache.commons.lang3.StringUtils;
  * //In charge of handling any operations to this region.
  */
 public class RegionHolder extends AbstractHolder {
-    public RegionHolder(Region region, RegionManager regionManager) {
-        super(region, regionManager);
+    public RegionHolder(Region region, RegionRoute regionRoute) {
+        super(region, regionRoute);
     }
 
     public void doDistribute(InternalReq req, InternalResp resp) {
