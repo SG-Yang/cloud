@@ -1,7 +1,7 @@
 package com.ahb.common.store;
 
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainValueHolder;
+import com.ahb.common.domain.DomainValues;
 import com.ahb.common.region.Criteria;
 import com.ahb.common.region.Region;
 
@@ -52,12 +52,12 @@ public class DBStore implements Store {
     }
 
     @Override
-    public void save(DomainValueHolder domainValue) {
+    public void save(DomainValues domainValue) {
 
     }
 
     @Override
-    public DomainValueHolder get(String domainId) {
+    public DomainValues get(String domainId) {
         return null;
     }
 
@@ -67,7 +67,7 @@ public class DBStore implements Store {
     }
 
     @Override
-    public Collection<DomainValueHolder> execute(Criteria criteria) {
+    public Collection<DomainValues> execute(Criteria criteria) {
         return null;
     }
 }

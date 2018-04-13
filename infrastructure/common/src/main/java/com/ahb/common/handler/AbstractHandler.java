@@ -23,6 +23,7 @@ public abstract class AbstractHandler implements Handler {
 
     @Override
     public Context handle(Context context) {
+
         for (Handler handler : handlers) {
             context = handler.handle(context);
             if (!context.isDone()) {
@@ -33,11 +34,12 @@ public abstract class AbstractHandler implements Handler {
         doHandle(context);
 
         if (context.isInitiator()) {
-           //TODO: Output results.
+            context.getInternalResp().output();
         }
 
         return context;
     }
+
 
     public abstract Context doHandle(Context context);
 

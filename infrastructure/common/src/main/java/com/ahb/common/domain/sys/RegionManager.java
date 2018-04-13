@@ -1,5 +1,6 @@
-package com.ahb.common.domain;
+package com.ahb.common.domain.sys;
 
+import com.ahb.common.domain.AbstractDomain;
 import com.ahb.common.handler.DomainHandlerChain;
 import com.ahb.common.handler.HandlerType;
 import com.ahb.common.handler.RegionCreateHandler;

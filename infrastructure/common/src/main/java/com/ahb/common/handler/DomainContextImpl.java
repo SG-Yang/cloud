@@ -3,6 +3,8 @@ package com.ahb.common.handler;
 import com.ahb.common.domain.Domain;
 import com.ahb.common.region.Region;
 import com.ahb.common.region.ResourceLocator;
+import com.ahb.common.view.View;
+import com.ahb.common.view.ViewPayload;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 import com.google.gson.JsonObject;
@@ -51,5 +53,10 @@ public class DomainContextImpl implements Context {
     @Override
     public boolean isInitiator() {
         return jumpStep == 0;
+    }
+
+    @Override
+    public void setView(View view) {
+       resp.setPayload(new ViewPayload(view,Boolean.TRUE));
     }
 }

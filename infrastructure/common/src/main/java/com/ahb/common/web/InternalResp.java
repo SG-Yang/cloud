@@ -2,6 +2,7 @@ package com.ahb.common.web;
 
 import com.ahb.common.view.ViewPayload;
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +22,7 @@ public class InternalResp {
 
     public void output() {
         try {
-            String jsonPayload = new Gson().toJson(payload);
+            JsonElement jsonPayload = new Gson().toJsonTree(payload);
             LOGGER.info("Response is:" + jsonPayload);
             resp.getWriter().print(jsonPayload);
             resp.flushBuffer();

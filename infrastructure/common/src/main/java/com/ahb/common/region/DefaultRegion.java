@@ -1,7 +1,7 @@
 package com.ahb.common.region;
 
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainValueHolder;
+import com.ahb.common.domain.DomainValues;
 
 import java.util.Collection;
 
@@ -14,7 +14,7 @@ public class DefaultRegion extends AbstractRegion {
         super(regionDomain);
     }
 
-    public DefaultRegion(Domain regionDomain, DomainValueHolder valueHolder) {
+    public DefaultRegion(Domain regionDomain, DomainValues valueHolder) {
         super(regionDomain);
         //TODO: init region from saved region domain.
     }

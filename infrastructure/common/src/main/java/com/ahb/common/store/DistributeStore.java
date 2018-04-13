@@ -1,7 +1,7 @@
 package com.ahb.common.store;
 
 import com.ahb.common.domain.Domain;
-import com.ahb.common.domain.DomainValueHolder;
+import com.ahb.common.domain.DomainValues;
 import com.ahb.common.exchange.ExchangeInfo;
 import com.ahb.common.exchange.ExchangeType;
 import com.ahb.common.node.CloudManager;
@@ -9,7 +9,6 @@ import com.ahb.common.node.NodeImpl;
 import com.ahb.common.region.Criteria;
 import com.ahb.common.region.Region;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -27,12 +26,12 @@ public class DistributeStore implements Store {
     }
 
     @Override
-    public void save(DomainValueHolder domain) {
+    public void save(DomainValues domain) {
 
     }
 
     @Override
-    public Collection<DomainValueHolder> execute(Criteria criteria) {
+    public Collection<DomainValues> execute(Criteria criteria) {
         ExchangeInfo info = new ExchangeInfo();
         try {
             info.setEType(ExchangeType.BIZ_DIS);
@@ -48,7 +47,7 @@ public class DistributeStore implements Store {
     }
 
     @Override
-    public DomainValueHolder get(String domainId) {
+    public DomainValues get(String domainId) {
         return null;
     }
 

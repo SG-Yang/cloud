@@ -71,12 +71,12 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public Collection<DomainValueHolder> execute(Criteria criteria) {
+    public Collection<DomainValues> execute(Criteria criteria) {
         return Collections.EMPTY_LIST;
     }
 
     @Override
-    public void save(DomainValueHolder domain) {
+    public void save(DomainValues domain) {
         try {
             Gson gson = new Gson();
             String strs = gson.toJson(domain);
@@ -88,7 +88,7 @@ public class StoreImpl implements Store {
     }
 
     @Override
-    public DomainValueHolder get(String domainId) {
+    public DomainValues get(String domainId) {
         return null;
     }
 

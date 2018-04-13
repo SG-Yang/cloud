@@ -20,6 +20,7 @@ public enum HandlerType {
     CREATE_DOMAIN_BY_JOIN_INTERNAL_DOMAINS,
     /*View related */
     ASSEMBLE_VIEW,
+    EDIT,
     /*Internal */
     MULTI_FROM
 

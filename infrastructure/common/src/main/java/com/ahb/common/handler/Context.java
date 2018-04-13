@@ -2,6 +2,7 @@ package com.ahb.common.handler;
 
 import com.ahb.common.domain.Domain;
 import com.ahb.common.region.ResourceLocator;
+import com.ahb.common.view.View;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 
@@ -19,4 +20,5 @@ public interface Context {
     InternalReq getInternalReq();
 
     ResourceLocator getLocator();
+    void setView(View view);
 }

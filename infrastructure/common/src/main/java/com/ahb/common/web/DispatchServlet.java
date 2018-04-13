@@ -45,9 +45,9 @@ public class DispatchServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        LOGGER.info("Receiving request:" + req.getRequestURL());
         InternalReq internalReq = InternalReqBuilder.newInstance()
                 .ofServletRequest(req).build();
+        LOGGER.info(String.format("Receiving request to %s with data:\n%s",req.getRequestURL(),internalReq));
         node.distribute(internalReq, new InternalResp(resp));
     }
 

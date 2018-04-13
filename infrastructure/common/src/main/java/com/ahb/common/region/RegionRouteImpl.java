@@ -36,7 +36,7 @@ public class RegionRouteImpl implements RegionRoute {
                 regions.add(hold.get());
             });
 
-            resp.setPayload(new ViewPayload(new RegionView(regions)));
+            resp.setPayload(new ViewPayload(new RegionViewImpl(regions)));
         }
 
         Holder region = HOLDER_MAPPINGS.get(req.getRegionUrl());

@@ -12,6 +12,10 @@ public class ViewPayload implements Serializable {
     public ViewPayload(View view) {
         this.view = view;
     }
+    public ViewPayload(View view,boolean status) {
+        this.view = view;
+        this.status = status;
+    }
 
     public boolean isStatus() {
         return status;

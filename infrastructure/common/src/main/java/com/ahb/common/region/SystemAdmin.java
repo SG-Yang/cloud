@@ -1,6 +1,7 @@
 package com.ahb.common.region;
 
 import com.ahb.common.domain.*;
+import com.ahb.common.domain.sys.*;
 
 /**
  * Created by aheroboy on 11/4/2018.
@@ -18,6 +19,12 @@ public class SystemAdmin extends AbstractRegion {
         install(new MonitorManager());
         install(new Dashboard());
         install(new HandlerManager());
-        install(new ViewManager());
+        ViewManagerImpl viewManagerImpl = new ViewManagerImpl();
+        DomainViewAssembler.Holder.INSTANCE.of().install(viewManagerImpl);
+        install(viewManagerImpl);
+        Command command = new Command();
+        command.initProposals();
+        install(command);
     }
+
 }

@@ -5,4 +5,5 @@ package com.ahb.common.region;
  */
 public interface Criteria {
     CriteriaType getType();
+    String getCriteriaData();
 }

@@ -9,7 +9,6 @@ import com.ahb.common.region.ResourceLocator;
 import com.ahb.common.view.ViewId;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
-import com.ahb.common.view.ViewPayload;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.slf4j.Logger;
@@ -29,14 +28,15 @@ public class AbstractDomain implements Domain {
     public static final DomainDesc domainDesc = new DomainDesc();
     private Map<HandlerType, Handler> chains = Maps.newHashMap();
     private List<ViewId> supportedViewIds = Lists.newArrayList();
-    private ViewId choisedViewId;
+    private ViewId choiseViewId;
 
     private Region region;
+
     static {
-        domainDesc.add(new ColumnDesc(1,ColumnType.LONG,Domain.SEQ));
-        domainDesc.add(new ColumnDesc(2,ColumnType.STRING,Domain.NAME));
-        domainDesc.add(new ColumnDesc(3,ColumnType.STRING,Domain.BUSINESS_ID));
-        domainDesc.add(new ColumnDesc(4,ColumnType.LONG,Domain.ID));
+        domainDesc.add(new ColumnDesc(1, ColumnType.LONG, Domain.SEQ));
+        domainDesc.add(new ColumnDesc(2, ColumnType.STRING, Domain.NAME));
+        domainDesc.add(new ColumnDesc(3, ColumnType.STRING, Domain.BUSINESS_ID));
+        domainDesc.add(new ColumnDesc(4, ColumnType.LONG, Domain.ID));
     }
 
     public AbstractDomain(String name, String id) {
@@ -53,9 +53,11 @@ public class AbstractDomain implements Domain {
     @Override
     public void handle(InternalReq req, InternalResp resp, Region region, ResourceLocator locator) {
         Handler handler = chains.get(req.getType());
-        Context context =new DomainContextImpl(this, req, resp);
+        if(handler == null) {
+            throw new RuntimeException("Unsupported operation for :" + req.getType());
+        }
+        Context context = new DomainContextImpl(this, req, resp);
         handler.handle(context);
-        context.getInternalResp().output();
     }
 
     @Override
@@ -65,6 +67,26 @@ public class AbstractDomain implements Domain {
         } else {
             chains.put(handler.getType(), handler);
         }
+    }
+
+    @Override
+    public void supportView(ViewId viewId) {
+        this.supportedViewIds.add(viewId);
+    }
+
+    @Override
+    public void choseView(ViewId viewId) {
+        this.choiseViewId = viewId;
+    }
+
+    @Override
+    public List<ViewId> getSupporedViews() {
+        return this.supportedViewIds;
+    }
+
+    @Override
+    public ViewId getChooseViewId() {
+        return this.choiseViewId;
     }
 
     @Override

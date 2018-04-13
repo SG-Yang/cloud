@@ -4,13 +4,15 @@ import com.ahb.common.HotInstallable;
 import com.ahb.common.handler.Handler;
 import com.ahb.common.region.Region;
 import com.ahb.common.region.ResourceLocator;
+import com.ahb.common.view.ViewId;
+import com.ahb.common.view.ViewSupport;
 import com.ahb.common.web.InternalReq;
 import com.ahb.common.web.InternalResp;
 
 /**
  * Created by aheroboy on 16/3/2018.
  */
-public interface Domain extends HotInstallable<Handler>{
+public interface Domain extends HotInstallable<Handler>,ViewSupport{
     String NAME = "NAME";
     String SEQ = "SEQ";
     String ID = "ID";
