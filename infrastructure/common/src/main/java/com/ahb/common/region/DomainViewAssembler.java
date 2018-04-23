@@ -1,6 +1,7 @@
 package com.ahb.common.region;
 
 import com.ahb.common.domain.Domain;
+import com.ahb.common.domain.ViewManager;
 import com.ahb.common.domain.ViewManagerImpl;
 import com.ahb.common.view.ProposalView;
 import com.ahb.common.view.View;
@@ -25,22 +26,22 @@ public class DomainViewAssembler {
         }
     }
 
-    private ViewManagerImpl viewManagerImpl;
+    private ViewManager viewManager;
 
-    void install(ViewManagerImpl viewManagerImpl) {
-        this.viewManagerImpl = viewManagerImpl;
+    void install(ViewManagerImpl viewManager) {
+        this.viewManager = viewManager;
     }
 
     private DomainViewAssembler() {
     }
 
     public List<ProposalView> getAllProposals() {
-        return viewManagerImpl.getAllProposalViews();
+        return viewManager.getAllProposalViews();
     }
 
     public View assemble(Domain domain) {
         ViewId chooseViewId = domain.getChooseViewId();
-        View view = viewManagerImpl.getViewById(chooseViewId);
+        View view = viewManager.getViewById(chooseViewId);
         if (view != null) {
             view = view.copy().decorate(domain);
         } else {

@@ -2,30 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6350ebd-7028-49b7-9b49-99e96808f735" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewId.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/CreateRegionHandler.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/BoardLayoutView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerChain.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/MutiFromHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/MutiFromHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerChain.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewAssembleHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewAssembleHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Layout.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Layout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Manu.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Manu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/VerticalityMenu.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/VerticalityMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app.css" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/app.component.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/app.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/CriteriaImpl.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/CriteriaImpl.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Req.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Req.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Style.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Style.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/View.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/View.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/core.module.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/core.module.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/PageEdit.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/PageEdit.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.html" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/inline.bundle.js.map" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/inline.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/main.bundle.js" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/main.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/main.bundle.js.map" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/main.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/styles.bundle.css" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/styles.bundle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/styles.bundle.css.map" afterPath="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/styles.bundle.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/target/classes/public/inline.bundle.js.map" afterPath="$PROJECT_DIR$/infrastructure/api/target/classes/public/inline.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/target/classes/public/main.bundle.js" afterPath="$PROJECT_DIR$/infrastructure/api/target/classes/public/main.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/target/classes/public/main.bundle.js.map" afterPath="$PROJECT_DIR$/infrastructure/api/target/classes/public/main.bundle.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/target/classes/public/styles.bundle.css" afterPath="$PROJECT_DIR$/infrastructure/api/target/classes/public/styles.bundle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/api/target/classes/public/styles.bundle.css.map" afterPath="$PROJECT_DIR$/infrastructure/api/target/classes/public/styles.bundle.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainViewAssembler.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainViewAssembler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/src/main/resources/TODOs" afterPath="$PROJECT_DIR$/infrastructure/common/src/main/resources/TODOs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/infrastructure/common/target/classes/TODOs" afterPath="$PROJECT_DIR$/infrastructure/common/target/classes/TODOs" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/market/target/" />
@@ -50,11 +59,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java">
+      <file leaf-file-name="ViewManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="315">
+              <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -63,91 +72,98 @@
       <file leaf-file-name="AbstractDomain.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="615">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SystemAdminDef.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/SystemAdminDef.java">
+      <file leaf-file-name="EditHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="540">
+              <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Domain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Domain.java">
+      <file leaf-file-name="SystemAdmin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HorizontalMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegionManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandlerManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/HandlerManager.java">
+      <file leaf-file-name="BoardLayoutView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/BoardLayoutView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonitorManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/MonitorManager.java">
+      <file leaf-file-name="Proposal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Proposal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegionCreateHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java">
+      <file leaf-file-name="Command.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding>
-                <element signature="e#235#236#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProposalView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CriteriaImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding>
+                <element signature="e#756#757#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#935#936#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,9 +174,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="AnnotationType" />
         <option value="Enum" />
+        <option value="TypeScript File" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -183,6 +199,7 @@
       <find>user</find>
       <find>userForm</find>
       <find>heart beat received</find>
+      <find>Collectors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,57 +213,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Domain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/Region.java" />
-        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.html" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DefaultDomain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AbstractRegion.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionManagerImpl.java" />
-        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/HandlerManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/ViewImpl.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/resources/TODOs" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewDomain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemBuildRegion.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/SystemBuildDomain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionRoute.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionCreator.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/MonitorManager.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdminRegion.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/SystemAdminDefDomain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/SystemAdminDef.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DefaultRegion.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionRouteImpl.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewType.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/DashboardView.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/ViewDelegator.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewPayload.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Viewable.java" />
         <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Component.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Layout.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Manu.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/VerticalityMenu.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewSupport.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionView.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/InternalResp.java" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/StyleImpl.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Style.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionViewImpl.java" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Style.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/View.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app.css" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/PageEdit.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/Layout.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/core.module.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/common/HttpService.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Req.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaImpl.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/view/DashboardView.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewId.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/Criteria.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Proposal.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Command.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/HandlerManager.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/MonitorManager.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/RegionManager.java" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/CriteriaImpl.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaType.java" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts" />
+        <option value="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts" />
         <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java" />
         <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerChain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerChain.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewAssembleHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/MutiFromHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/CreateRegionHandler.java" />
-        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainViewAssembler.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/BoardLayoutView.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java" />
+        <option value="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java" />
       </list>
     </option>
   </component>
@@ -312,7 +329,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -331,6 +348,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -449,79 +467,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -597,90 +547,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="infrastructure" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="region" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="handler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="infrastructure" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -690,29 +601,29 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Region&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/AbstractRegion.java&#10;admin&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java&#10;View&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/View.java&#10;RegionM&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java&#10;NodeIm&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;RegionMan&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionManager.java&#10;DashB&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java&#10;Inter&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/InternalResp.java&#10;Sys&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/SystemBuildDomain.java&#10;HandlerT&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java&#10;nODE&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;Disp&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;Dis&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;AbstractDo&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java&#10;NodeI&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;StoreIm&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;sER&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;conn&#9;PSI&#9;JAVA://com.ahb.common.node.ConnectionManagerImpl&#10;ColumnType&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/ColumnType.java&#10;core.re&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/resources/store/region/admin/core.region&#10;Node&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;default&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/resources/default.region&#10;RegionMa&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionManagerImpl.java&#10;StoreI&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;Storeim&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;Annotation&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/classfile/Annotation.class&#10;Resource&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java&#10;DispatchServlet&#9;PSI&#9;JAVA://com.ahb.common.web.DispatchServlet&#10;Co&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java&#10;Conne&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java&#10;Dispat&#9;PSI&#9;JAVA://com.ahb.common.web.DispatchServlet&#10;Store&#9;PSI&#9;JAVA://com.ahb.common.store.Store&#10;Client&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ClientBuilder.java&#10;sTOR&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/DistributeStore.java&#10;NodeImpl&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;Hold&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/RegionHolder.java&#10;pub&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/PubRegion.java&#10;Domain&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/RegionDomain.java&#10;Ser&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;Tree&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/com/sun/source/tree/Tree.java&#10;dash&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts&#10;Res&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/api/src/main/angular/src/app/modules/Res.ts&#10;Login&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts&#10;NodeBoot&#9;PSI&#9;JAVA://com.ahb.common.NodeBoot&#10;Opera&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/OperatePayload.java&#10;Req&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/api/src/main/angular/src/app/modules/Req.ts&#10;vIEWp&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/ViewPayload.java&#10;userForm&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/api/src/main/angular/src/app/modules/party/login/userForm.html&#10;HouseKeeper&#9;PSI&#9;JAVA://org.eclipse.jetty.server.session.HouseKeeper" />
+    <property name="SearchEverywhereHistoryKey" value="ViewMan&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java&#10;command&#9;PSI&#9;JAVA://com.ahb.common.domain.sys.Command&#10;Command&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java&#10;ViewType&#9;PSI&#9;JAVA://com.ahb.common.domain.view.ViewType&#10;ViewMana&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java&#10;DashBoard&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java&#10;ViewHandler&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java&#10;DispatchServlet&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;Criter&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaImpl.java&#10;User&#9;null&#9;null&#10;Inter&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/InternalReq.java&#10;View&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java&#10;Style.java&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/view/StyleImpl.java&#10;ViewH&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java&#10;nODEiM&#9;PSI&#9;JAVA://com.ahb.common.node.NodeImpl&#10;Viewh&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java&#10;Abstract&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java&#10;Region&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java&#10;DomainVa&#9;PSI&#9;JAVA://com.ahb.common.domain.DomainValueHolder&#10;Domain&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/Domain.java&#10;admin&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java&#10;RegionM&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java&#10;NodeIm&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;RegionMan&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionManager.java&#10;DashB&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java&#10;Sys&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/SystemBuildDomain.java&#10;HandlerT&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java&#10;nODE&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;Disp&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;Dis&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;AbstractDo&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java&#10;NodeI&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;StoreIm&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;sER&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/web/DispatchServlet.java&#10;conn&#9;PSI&#9;JAVA://com.ahb.common.node.ConnectionManagerImpl&#10;ColumnType&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/domain/ColumnType.java&#10;core.re&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/resources/store/region/admin/core.region&#10;Node&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java&#10;default&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/resources/default.region&#10;RegionMa&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionManagerImpl.java&#10;StoreI&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;Storeim&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java&#10;Annotation&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/lib/tools.jar!/com/sun/tools/classfile/Annotation.class&#10;Resource&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java&#10;Co&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java&#10;Conne&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java&#10;Dispat&#9;PSI&#9;JAVA://com.ahb.common.web.DispatchServlet&#10;Store&#9;PSI&#9;JAVA://com.ahb.common.store.Store&#10;Client&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/node/ClientBuilder.java&#10;sTOR&#9;FILE&#9;file:///Users/aheroboy/IdeaProjects/cloud/infrastructure/common/src/main/java/com/ahb/common/region/DistributeStore.java" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/infrastructure/api/src/main/java" />
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ahb.common.domain.sys" />
+      <recent name="com.ahb.common.view" />
+      <recent name="com.ahb.common.region" />
+      <recent name="com.ahb.common.handler" />
+      <recent name="com.ahb.common.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/infrastructure/common/src/main/resources/store" />
+      <recent name="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/assets" />
+      <recent name="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/exchange" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/infrastructure/common/src/main/resources/store/region/admin" />
       <recent name="$PROJECT_DIR$/infrastructure/common/src/main/resources/store/region/pub" />
       <recent name="$PROJECT_DIR$/infrastructure/common/src/main" />
       <recent name="$PROJECT_DIR$/infrastructure/common/src/main/java" />
-      <recent name="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/exchange" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ahb.common.view" />
-      <recent name="com.ahb.common.region" />
-      <recent name="com.ahb.common.handler" />
-      <recent name="com.ahb.common.domain" />
-      <recent name="store.region" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/infrastructure/common/src/main/resources/store" />
-      <recent name="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/assets" />
       <recent name="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/exchange" />
     </key>
   </component>
@@ -1701,48 +1612,62 @@
       <workItem from="1523350692268" duration="138000" />
       <workItem from="1523351010203" duration="14897000" />
       <workItem from="1523430454503" duration="14000" />
-      <workItem from="1523430542730" duration="3635000" />
+      <workItem from="1523430542730" duration="5434000" />
+      <workItem from="1523494965202" duration="2022000" />
+      <workItem from="1523497262257" duration="6729000" />
+      <workItem from="1523507315328" duration="12264000" />
+      <workItem from="1523587558603" duration="13293000" />
+      <workItem from="1523674677811" duration="123000" />
+      <workItem from="1523846149403" duration="3938000" />
+      <workItem from="1524449689433" duration="15000" />
     </task>
+    <task id="LOCAL-00001" summary="add view proposal">
+      <created>1523604448041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1523604448041</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333143000" />
+    <option name="totallyTimeSpent" value="373326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09656652" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09656652" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SonarQube" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2397163" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48368794" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.121985815" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22269504" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19067797" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26824033" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25107297" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32624114" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13884993" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1752,80 +1677,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add view proposal" />
+    <option name="LAST_COMMIT_MESSAGE" value="add view proposal" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AVLTree.java</url>
-          <line>251</line>
+          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java</url>
+          <line>19</line>
           <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AVLTree.java</url>
-          <line>221</line>
-          <properties />
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/SelfCloudManager.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/SelfCloudManager.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java</url>
-          <line>279</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java</url>
-          <line>278</line>
-          <properties />
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/ConnectionManagerImpl.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AbstractRegion.java</url>
-          <line>63</line>
-          <properties />
-          <option name="timeStamp" value="116" />
+          <option name="timeStamp" value="122" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="118" />
+      <option name="time" value="131" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1834,456 +1703,174 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/Distributor.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-servlet/9.4.8.v20171121/jetty-servlet-9.4.8.v20171121-sources.jar!/org/eclipse/jetty/servlet/ServletHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="160">
+          <caret line="869" column="0" lean-forward="false" selection-start-line="869" selection-start-column="0" selection-end-line="869" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/LifeCycle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AbstractHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewType.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/OperatePayload.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#438#439#0" expanded="false" />
-            <element signature="e#472#473#0" expanded="false" />
-            <element signature="e#531#532#0" expanded="false" />
-            <element signature="e#577#578#0" expanded="false" />
-            <element signature="e#618#619#0" expanded="false" />
-            <element signature="e#649#650#0" expanded="false" />
-            <element signature="e#703#704#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-          </folding>
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/InternalReq.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/CriteriaImpl.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#572#573#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#654#655#0" expanded="false" />
-            <element signature="e#692#693#0" expanded="false" />
-            <element signature="e#729#730#0" expanded="false" />
-            <element signature="e#761#762#0" expanded="false" />
-            <element signature="e#811#812#0" expanded="false" />
-            <element signature="e#853#854#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#953#954#0" expanded="false" />
-            <element signature="e#1003#1004#0" expanded="false" />
-            <element signature="e#1069#1070#0" expanded="false" />
-            <element signature="e#1104#1105#0" expanded="false" />
-            <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1215#1216#0" expanded="false" />
-            <element signature="e#1279#1280#0" expanded="false" />
-            <element signature="e#1315#1316#0" expanded="false" />
-            <element signature="e#1342#1343#0" expanded="false" />
-            <element signature="e#1387#1388#0" expanded="false" />
-            <element signature="e#1419#1420#0" expanded="false" />
-            <element signature="e#1461#1462#0" expanded="false" />
-            <element signature="e#1491#1492#0" expanded="false" />
-            <element signature="e#1545#1546#0" expanded="false" />
-            <element signature="e#1583#1584#0" expanded="false" />
-            <element signature="e#1614#1615#0" expanded="false" />
-            <element signature="e#1642#1643#0" expanded="false" />
-            <element signature="e#1683#1684#0" expanded="false" />
-            <element signature="e#1717#1718#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/InternalReqBuilder.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/dashboard.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#617#618#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="127">
+          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/login/Login.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="35" column="101" lean-forward="false" selection-start-line="35" selection-start-column="101" selection-end-line="35" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/NodeBoot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionRouteImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="250">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="false" />
             <element signature="e#945#946#0" expanded="false" />
             <element signature="e#1021#1022#0" expanded="false" />
-            <element signature="e#1943#1944#0" expanded="false" />
-            <element signature="e#1988#1989#0" expanded="false" />
-            <element signature="e#2026#2027#0" expanded="false" />
-            <element signature="e#2111#2112#0" expanded="false" />
-            <element signature="e#2288#2289#0" expanded="false" />
-            <element signature="e#2316#2317#0" expanded="false" />
-            <element signature="e#2364#2365#0" expanded="false" />
-            <element signature="e#2392#2393#0" expanded="false" />
-            <element signature="e#2441#2442#0" expanded="false" />
-            <element signature="e#2469#2470#0" expanded="false" />
-            <element signature="e#2518#2519#0" expanded="false" />
-            <element signature="e#2546#2547#0" expanded="false" />
-            <element signature="e#2594#2595#0" expanded="false" />
-            <element signature="e#2622#2623#0" expanded="false" />
-            <element signature="e#2689#2690#0" expanded="false" />
-            <element signature="e#2748#2749#0" expanded="false" />
+            <element signature="e#1947#1948#0" expanded="false" />
+            <element signature="e#1992#1993#0" expanded="false" />
+            <element signature="e#2030#2031#0" expanded="false" />
+            <element signature="e#2115#2116#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionView.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ColumnDesc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainDesc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="183" column="18" lean-forward="false" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="159" column="27" lean-forward="false" selection-start-line="159" selection-start-column="27" selection-end-line="159" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#352#353#0" expanded="false" />
-            <element signature="e#399#400#0" expanded="false" />
-            <element signature="e#443#444#0" expanded="false" />
+            <marker date="1523497504469" expanded="true" signature="5028:5048" ph="SELECT * FRO... REGION" />
+            <marker date="1523497504469" expanded="true" signature="5628:5709" ph="select * fro... REGION_DETAILS" />
+            <marker date="1523497504469" expanded="true" signature="7630:8026" ph="CREATE TABLE... REGION_DETAILS" />
+            <marker date="1523497504469" expanded="true" signature="8061:8206" ph="CREATE TABLE... REGION" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/ResourceLocator.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Style.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="e#401#402#0" expanded="false" />
-            <element signature="e#494#495#0" expanded="false" />
-            <element signature="e#534#535#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="43" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewId.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/DashboardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Manu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#195#196#0" expanded="true" />
-            <element signature="e#222#223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/VerticalityMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding>
-            <element signature="e#206#207#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Layout.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#249#250#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
-          <folding />
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewPayload.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#234#235#0" expanded="false" />
-            <element signature="e#266#267#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/InternalResp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/JoinHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionHandlerChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#317#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewAssembleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
-          <folding>
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
-          <folding>
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Context.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionResourceLocatorImpl.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AbstractRegion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="69" column="18" lean-forward="false" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/MutiFromHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="e#191#192#0" expanded="true" />
-            <element signature="e#225#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/HandlerType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/CreateRegionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/RegionCreateHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#235#236#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Domain.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DashboardHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Viewable.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -2291,11 +1878,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewAssembleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/WebEngineImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/LifeCycle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/HandlerManager.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/NodeId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/node/NodeImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainViewAssembler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#861#862#0" expanded="false" />
+            <element signature="e#917#918#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/StyleImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -2303,51 +1951,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/MonitorManager.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/AbstractRegion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="54" column="16" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/ViewHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/AbstractHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="188">
+          <caret line="43" column="31" lean-forward="true" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainContextImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/InternalReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/web/OperatePayload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/CriteriaImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="33" column="12" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Proposal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/BoardLayoutView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/AbstractDomain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="615">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/Handler.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/HorizontalMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/RegionManager.java">
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="690">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/SystemAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding>
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

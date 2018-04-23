@@ -360,4 +360,6 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-text-shadow{text-shadow:1px 1px 0 #444}.w3-text-shadow-white{text-shadow:1px 1px 0 #ddd}
 .footer{height:50px;position:absolute;bottom:0px;left:0px;
     right:0px;}
+.ahb_none{}
+
 /*# sourceMappingURL=styles.bundle.css.map*/

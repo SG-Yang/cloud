@@ -37,7 +37,7 @@ public class EditHandler extends AbstractHandler {
     }
 
     void proposal(String assembleCommand, Context context) {
-        String[] commends = StringUtils.split("\\.");
+        String[] commends = StringUtils.split(assembleCommand,"\\.");
         String command = commends[commends.length - 1];
         View proposals = ((Proposal) context.getDomain()).getProposals(command);
         context.setView(proposals);

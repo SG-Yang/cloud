@@ -1,4 +1,9 @@
-<p>
-  dashboard works!
-</p>
+<div id="docker" [ngClass]= "getInterClass()">
+  <div>
+    <textarea style="width: 100%" #pageEdit (keyup)="editPage(pageEdit.value)"></textarea>
+  </div>
+  <div id="editLayout">
+
+  </div>
+</div>
 

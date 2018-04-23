@@ -10,6 +10,7 @@ import {Headers, RequestOptions} from "@angular/http";
 import {Req} from "../../Req";
 import {Res} from "../../Res";
 import {Router} from "@angular/router";
+import {CriteriaImpl} from "../../CriteriaImpl";
 @Component({
   selector: 'login-form',
   templateUrl: './userForm.html',
@@ -32,7 +33,7 @@ export class LoginComponent {
         'Content-Type': 'application/json'
       }
     );
-    this.userService.login(new Req("LOGIN", this.loginUser), new RequestOptions({headers: headers})).subscribe(outUser => {
+    this.userService.login(new Req("LOGIN", new CriteriaImpl(JSON.stringify(this.loginUser),"PROPOSAL")), new RequestOptions({headers: headers})).subscribe(outUser => {
       let res = outUser as Res;
       if (res && res.status) {
         console.error("invalid login...")

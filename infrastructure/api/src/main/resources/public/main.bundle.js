@@ -37,7 +37,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
             selector: 'app-root',
-            template: "\n    <div style=\"width: 99%;height: 90%;margin-right: -1%;\">\n      <app-header></app-header>\n      <div style=\"margin-top:10%\">\n        <!--<app-nav></app-nav>-->\n        <div id=\"main\">\n          <router-outlet name=\"rootOutlet\"></router-outlet>\n        </div>\n\n      </div>\n      <app-footer></app-footer>\n    </div>",
+            template: "\n    <div style=\"width: 99%;height: 90%;margin-right: -1%;\">\n      <app-header></app-header>\n      <div style=\"margin-top:5%\">\n        <!--<app-nav></app-nav>-->\n        <div id=\"main\">\n          <router-outlet name=\"rootOutlet\"></router-outlet>\n        </div>\n\n      </div>\n      <app-footer></app-footer>\n    </div>",
         })
     ], AppComponent);
     return AppComponent;
@@ -109,6 +109,26 @@ var AppModule = (function () {
 
 /***/ }),
 
+/***/ "../../../../../src/app/modules/CriteriaImpl.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CriteriaImpl; });
+/**
+ * Created by aheroboy on 12/4/2018.
+ */
+var CriteriaImpl = (function () {
+    function CriteriaImpl(criteriaData, type) {
+        this.criteriaData = criteriaData;
+        this.type = type;
+    }
+    return CriteriaImpl;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/modules/Req.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -118,9 +138,9 @@ var AppModule = (function () {
  * Created by aheroboy on 19/3/2018.
  */
 var Req = (function () {
-    function Req(op, c) {
-        this.op = op;
-        this.c = c;
+    function Req(operateType, criteria) {
+        this.operateType = operateType;
+        this.criteria = criteria;
     }
     return Req;
 }());
@@ -784,6 +804,677 @@ var TypeService = (function (_super) {
 
 /***/ }),
 
+/***/ "../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"border-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  border-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BorderLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BorderLayoutComponent = (function () {
+    function BorderLayoutComponent() {
+    }
+    BorderLayoutComponent.prototype.ngOnInit = function () {
+    };
+    BorderLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-border-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BorderLayoutComponent);
+    return BorderLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"box-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  box-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BoxLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BoxLayoutComponent = (function () {
+    function BoxLayoutComponent() {
+    }
+    BoxLayoutComponent.prototype.ngOnInit = function () {
+    };
+    BoxLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-box-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BoxLayoutComponent);
+    return BoxLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"card-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  card-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CardLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CardLayoutComponent = (function () {
+    function CardLayoutComponent() {
+    }
+    CardLayoutComponent.prototype.ngOnInit = function () {
+    };
+    CardLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-card-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], CardLayoutComponent);
+    return CardLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"column-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  column-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ColumnLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ColumnLayoutComponent = (function () {
+    function ColumnLayoutComponent() {
+    }
+    ColumnLayoutComponent.prototype.ngOnInit = function () {
+    };
+    ColumnLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-column-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ColumnLayoutComponent);
+    return ColumnLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"flow-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  flow-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FlowLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FlowLayoutComponent = (function () {
+    function FlowLayoutComponent() {
+    }
+    FlowLayoutComponent.prototype.ngOnInit = function () {
+    };
+    FlowLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-flow-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FlowLayoutComponent);
+    return FlowLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"grid-bag-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  grid-bag-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridBagLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GridBagLayoutComponent = (function () {
+    function GridBagLayoutComponent() {
+    }
+    GridBagLayoutComponent.prototype.ngOnInit = function () {
+    };
+    GridBagLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-grid-bag-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GridBagLayoutComponent);
+    return GridBagLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"grid-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  grid-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GridLayoutComponent = (function () {
+    function GridLayoutComponent() {
+    }
+    GridLayoutComponent.prototype.ngOnInit = function () {
+    };
+    GridLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-grid-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GridLayoutComponent);
+    return GridLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"group-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  group-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GroupLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var GroupLayoutComponent = (function () {
+    function GroupLayoutComponent() {
+    }
+    GroupLayoutComponent.prototype.ngOnInit = function () {
+    };
+    GroupLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-group-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GroupLayoutComponent);
+    return GroupLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"row-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  row-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RowLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var RowLayoutComponent = (function () {
+    function RowLayoutComponent() {
+    }
+    RowLayoutComponent.prototype.ngOnInit = function () {
+    };
+    RowLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-row-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], RowLayoutComponent);
+    return RowLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"spring-layout.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  spring-layout works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SpringLayoutComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SpringLayoutComponent = (function () {
+    function SpringLayoutComponent() {
+    }
+    SpringLayoutComponent.prototype.ngOnInit = function () {
+    };
+    SpringLayoutComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-spring-layout',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], SpringLayoutComponent);
+    return SpringLayoutComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/view-manager/view-manager.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(true);
+// imports
+
+
+// module
+exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"view-manager.component.css","sourceRoot":""}]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/view-manager/view-manager.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  view-manager works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/modules/core/common/view-manager/view-manager.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ViewManagerComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ViewManagerComponent = (function () {
+    function ViewManagerComponent() {
+    }
+    ViewManagerComponent.prototype.ngOnInit = function () {
+    };
+    ViewManagerComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-view-manager',
+            template: __webpack_require__("../../../../../src/app/modules/core/common/view-manager/view-manager.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/modules/core/common/view-manager/view-manager.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ViewManagerComponent);
+    return ViewManagerComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "../../../../../src/app/modules/core/core.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -802,12 +1493,34 @@ var TypeService = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__party_dashboard_dashboard_component__ = __webpack_require__("../../../../../src/app/modules/party/dashboard/dashboard.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__common_layout_column_layout_column_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/column-layout/column-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__common_layout_row_layout_row_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/row-layout/row-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__common_layout_card_layout_card_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/card-layout/card-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__common_layout_flow_layout_flow_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/flow-layout/flow-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__common_layout_grid_bag_layout_grid_bag_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/grid-bag-layout/grid-bag-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__common_layout_grid_layout_grid_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/grid-layout/grid-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__common_layout_group_layout_group_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/group-layout/group-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__common_layout_box_layout_box_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/box-layout/box-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__common_layout_spring_layout_spring_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/spring-layout/spring-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__common_layout_border_layout_border_layout_component__ = __webpack_require__("../../../../../src/app/modules/core/common/layout/border-layout/border-layout.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__common_view_manager_view_manager_component__ = __webpack_require__("../../../../../src/app/modules/core/common/view-manager/view-manager.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -841,7 +1554,18 @@ var CoreModule = (function () {
                 __WEBPACK_IMPORTED_MODULE_3__common_HeaderComponent__["a" /* HeaderComponent */],
                 __WEBPACK_IMPORTED_MODULE_2__common_FooterComponent__["a" /* FooterComponent */],
                 __WEBPACK_IMPORTED_MODULE_1__common_NavBarComponent__["a" /* NavBarComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__party_dashboard_dashboard_component__["a" /* DashboardComponent */]
+                __WEBPACK_IMPORTED_MODULE_11__party_dashboard_dashboard_component__["a" /* DashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_13__common_layout_column_layout_column_layout_component__["a" /* ColumnLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__common_layout_row_layout_row_layout_component__["a" /* RowLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__common_layout_card_layout_card_layout_component__["a" /* CardLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__common_layout_flow_layout_flow_layout_component__["a" /* FlowLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_17__common_layout_grid_bag_layout_grid_bag_layout_component__["a" /* GridBagLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_18__common_layout_grid_layout_grid_layout_component__["a" /* GridLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_19__common_layout_group_layout_group_layout_component__["a" /* GroupLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_20__common_layout_box_layout_box_layout_component__["a" /* BoxLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_21__common_layout_spring_layout_spring_layout_component__["a" /* SpringLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_22__common_layout_border_layout_border_layout_component__["a" /* BorderLayoutComponent */],
+                __WEBPACK_IMPORTED_MODULE_23__common_view_manager_view_manager_component__["a" /* ViewManagerComponent */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_12__common_HttpService__["a" /* HttpService */]
@@ -885,7 +1609,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/modules/party/dashboard/dashboard.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  dashboard works!\n</p>\n<canvas #canvas (mousedown)=\"onMouseDown($event)\" (mouseup)=\"onMouseUp($event)\">\n</canvas>\n\n"
+module.exports = "<div id=\"docker\" [ngClass]= \"getInterClass()\">\n  <div>\n    <textarea style=\"width: 100%\" #pageEdit (keyup)=\"editPage(pageEdit.value)\"></textarea>\n  </div>\n  <div id=\"editLayout\">\n\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -897,6 +1621,7 @@ module.exports = "<p>\n  dashboard works!\n</p>\n<canvas #canvas (mousedown)=\"o
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__core_common_HttpService__ = __webpack_require__("../../../../../src/app/modules/core/common/HttpService.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Req__ = __webpack_require__("../../../../../src/app/modules/Req.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__CriteriaImpl__ = __webpack_require__("../../../../../src/app/modules/CriteriaImpl.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -909,14 +1634,55 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var DashboardComponent = (function () {
     function DashboardComponent(httpService) {
         this.httpService = httpService;
+        this.component = "ahb/admin/dashboard";
+        this.commandComponent = "ahb/admin/command";
     }
+    DashboardComponent.prototype.shouldRequest = function (value) {
+        return value.lastIndexOf(".") + 1 == value.length;
+    };
+    DashboardComponent.prototype.editPage = function (value) {
+        var _this = this;
+        if (this.shouldRequest(value)) {
+            console.info(value);
+            var req = new __WEBPACK_IMPORTED_MODULE_2__Req__["a" /* Req */]('EDIT', new __WEBPACK_IMPORTED_MODULE_3__CriteriaImpl__["a" /* CriteriaImpl */](value, "PROPOSAL"));
+            this.httpService.postItemsProvideComponent(req, this.commandComponent).subscribe(function (result) {
+                var res = result;
+                if (res && res.status) {
+                    _this.result = res;
+                    console.info("result is:" + _this.result);
+                }
+                else {
+                    console.error("Invalid access.");
+                }
+            });
+        }
+    };
+    DashboardComponent.prototype.getInterClass = function () {
+        if (this.result) {
+            return this.result.view.style.classId;
+        }
+        else {
+            return "w3-container";
+        }
+    };
     DashboardComponent.prototype.ngOnInit = function () {
-        var req = new __WEBPACK_IMPORTED_MODULE_2__Req__["a" /* Req */]('get', {});
-        this.httpService.setComponent('ahb/admin/dashboard');
-        this.httpService.postItems(req);
+        var _this = this;
+        var req = new __WEBPACK_IMPORTED_MODULE_2__Req__["a" /* Req */]('VIEW', new __WEBPACK_IMPORTED_MODULE_3__CriteriaImpl__["a" /* CriteriaImpl */]("some else", "PROPOSAL"));
+        this.httpService.postItemsProvideComponent(req, this.component).subscribe(function (dashboard) {
+            var res = dashboard;
+            if (res && res.status) {
+                _this.result = res;
+                console.info("result is:" + _this.result);
+            }
+            else {
+                console.error("Invalid access.");
+            }
+        });
+        console.info("dashboard success!!!");
     };
     DashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -945,6 +1711,7 @@ var DashboardComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Req__ = __webpack_require__("../../../../../src/app/modules/Req.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__CriteriaImpl__ = __webpack_require__("../../../../../src/app/modules/CriteriaImpl.ts");
 /**
  * Created by aheroboy on 4/11/2017.
  */
@@ -957,6 +1724,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -980,7 +1748,7 @@ var LoginComponent = (function () {
             'X-Requested-With': 'XMLHttpRequest',
             'Content-Type': 'application/json'
         });
-        this.userService.login(new __WEBPACK_IMPORTED_MODULE_5__Req__["a" /* Req */]("LOGIN", this.loginUser), new __WEBPACK_IMPORTED_MODULE_4__angular_http__["e" /* RequestOptions */]({ headers: headers })).subscribe(function (outUser) {
+        this.userService.login(new __WEBPACK_IMPORTED_MODULE_5__Req__["a" /* Req */]("LOGIN", new __WEBPACK_IMPORTED_MODULE_7__CriteriaImpl__["a" /* CriteriaImpl */](JSON.stringify(this.loginUser), "PROPOSAL")), new __WEBPACK_IMPORTED_MODULE_4__angular_http__["e" /* RequestOptions */]({ headers: headers })).subscribe(function (outUser) {
             var res = outUser;
             if (res && res.status) {
                 console.error("invalid login...");

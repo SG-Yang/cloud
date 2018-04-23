@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class Command extends AbstractDomain implements Proposal {
     public static final String NAME = "command";
-    private Map<ViewId, ProposalView> proposalViews = Maps.newHashMap();
+    private Map<String, ProposalView> proposalViews = Maps.newHashMap();
 
     public Command() {
         this(NAME, NAME);
@@ -28,13 +28,13 @@ public class Command extends AbstractDomain implements Proposal {
 
     @Override
     public View getProposals(String proposal) {
-        return proposalViews.get(new ViewId(proposal));
+        return proposalViews.get(proposal);
     }
 
     @Override
     public void initProposals() {
         DomainViewAssembler.Holder.INSTANCE.of().getAllProposals().stream().forEach((ProposalView view) -> {
-            proposalViews.put(view.getViewId(), view);
+            proposalViews.put(view.getDisplayCommand(), view);
         });
     }
 }

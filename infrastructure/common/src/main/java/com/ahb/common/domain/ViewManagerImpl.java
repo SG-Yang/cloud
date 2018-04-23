@@ -35,4 +35,10 @@ public class ViewManagerImpl extends AbstractDomain implements Viewable, ViewMan
     public List<ProposalView> getAllProposalViews() {
         return views.stream().map((View view) -> view.getProposal()).collect(Collectors.toList());
     }
+
+    @Override
+    public ViewManager addView(View view) {
+        this.views.add(view);
+        return this;
+    }
 }

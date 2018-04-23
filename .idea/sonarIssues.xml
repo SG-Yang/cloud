@@ -28,6 +28,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app.css">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/app.component.ts">
           <value>
             <set />
@@ -38,12 +43,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/CriteriaImpl.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Req.ts">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Res.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/Style.ts">
           <value>
             <set />
           </value>
@@ -69,6 +84,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/core/core.module.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/Layout.ts">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/angular/src/app/modules/party/dashboard/PageEdit.ts">
           <value>
             <set />
           </value>
@@ -119,6 +144,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/index.html">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/api/src/main/resources/public/main.bundle.js">
           <value>
             <set />
           </value>
@@ -263,6 +293,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Command.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Dashboard.java">
           <value>
             <set />
@@ -298,6 +333,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainValues.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/DomainView.java">
           <value>
             <set />
@@ -319,6 +359,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/MonitorManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Proposal.java">
           <value>
             <set />
           </value>
@@ -369,6 +414,46 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/ViewManagerImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/Viewable.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Command.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/HandlerManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/MonitorManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/Proposal.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/sys/RegionManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/domain/view/DashboardView.java">
           <value>
             <set />
           </value>
@@ -434,6 +519,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/DomainHandlerResImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/handler/EditHandler.java">
           <value>
             <set />
           </value>
@@ -718,6 +808,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/DomainViewAssembler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/ForwardHolder.java">
           <value>
             <set />
@@ -813,6 +908,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/RegionViewImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/ResourceLocator.java">
           <value>
             <set />
@@ -848,6 +948,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/region/ViewDelegator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/store/DBStore.java">
           <value>
             <set />
@@ -869,6 +974,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/store/StoreImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/BoardLayoutView.java">
           <value>
             <set />
           </value>
@@ -898,6 +1008,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ProposalView.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/Style.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/StyleImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/TopBottonLayout.java">
           <value>
             <set />
@@ -913,7 +1038,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewId.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewPayload.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/infrastructure/common/src/main/java/com/ahb/common/view/ViewSupport.java">
           <value>
             <set />
           </value>
