@@ -5,7 +5,6 @@ import com.ahb.common.handler.EditHandler;
 import com.ahb.common.region.DomainViewAssembler;
 import com.ahb.common.view.ProposalView;
 import com.ahb.common.view.View;
-import com.ahb.common.view.ViewId;
 import com.google.common.collect.Maps;
 
 import java.util.Map;
